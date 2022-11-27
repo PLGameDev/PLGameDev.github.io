@@ -77,6 +77,14 @@
     .footer-columns{
         flex-basis: 100%;
     }
+
+    #buttons-parent{
+        flex-direction: column;
+    }
+
+    .buttons{
+        margin: 15px 0;
+    }
 }
 
 @media(max-width: 810px){
@@ -93,7 +101,7 @@
     .game-description-parent img{
         max-width: 15%;
         max-height: 15%;
-    }
+    } 
 }
 
 @media(max-width: 720px){
@@ -115,10 +123,6 @@
 }
 
 @media(max-width: 540px){
-    .section-parent{
-        width: 80%;
-    }
-
     .game-description-parent{
         padding: 10px 20px;
     }
@@ -126,24 +130,11 @@
     .game-picture{
         height: 275px;
     }
-
-    #buttons-parent{
-        flex-direction: column;
-    }
-
-    .buttons{
-        margin: 15px 0;
-    }
 }
 
 @media(max-width: 425px){
     #buttons-parent{
         flex-wrap: wrap;
-    }
-
-    .buttons{
-        flex-basis: 45%;
-        margin: 10px auto;
     }
     
     .game-picture{
