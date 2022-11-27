@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" name="savicon" href="../Images/official_logo.png">
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/games.css">
+    <link rel="stylesheet" href="../CSS/games_rwd.css">
+    <link rel="stylesheet" href="../CSS/contactme_rwd.css">
+    <title>PL-GameDev - 3D Games</title>
+  </head>
+  <body>
+    <!-- Navigation section of the webpage -->
+    <nav id="nav-bar">
+      <a href="index.html" id="logo">
+        <img src="../Images/official_logo.png"
+        style="max-width: 100%; max-height: 100%; border-radius: 100px;"></a>
+      <a href="2dgames.html">
+        <button class="nobg-nav-buttons">2D Games</button></a>
+      <a href="index.html" >
+        <button class="nobg-nav-buttons">Homepage</button></a>
+      <a href="assets_showcase.html">
+        <button class="nobg-nav-buttons">Showcase</button></a>
+      <a href="https://gofund.me/626b8087">
+        <button class="withbg-nav-buttons">Donate</button></a>
+      <a href="#">
+        <button class="withbg-nav-buttons js-open-popup">Contact Me</button></a>
+      
+      <!-- Mobile viewport -->
+      <div id="hidden-buttons-icon" onclick="mobileButtons()">
+        <img src="../Images/hidden_buttons_icon.png" alt="#"
+          style="max-width: 100%; max-height: 100%; margin: auto;">
+      </div>
+      
+      <ul id="buttons-list">
+        <li><a href="../HTML/2dgames.html">2D Games</a></li>
+        <hr style="width: 100%;">
+        <li><a href="../HTML/3dgames.html">3D Games</a></li>
+        <hr style="width: 100%;">
+        <li><a href="../HTML/assets_showcase.html">Showcase</a></li>
+        <hr style="width: 100%;">
+        <li><a href="https://gofund.me/626b8087">Donate</a></li>
+        <hr style="width: 100%;">
+        <li><a href="#" class="js-open-popup">Contact Me</a></li>
+      </ul>
+      <!-- End of Mobile viewport -->
+    </nav>
+    <!-- End of navigation section -->
+    
+    <!-- Contact Me Pop-up -->
+    <div id="contactme-popup-container" class="js-popup">
+      <img src="../Images/contactme_popup_icon.png" alt="#">
+      <p>Contact Me</p>
+      <form action="" class="popup-parent">
+        <label for="name">Name</label>
+        <input id="js-name-input" type="text" placeholder="Please use your real name." maxlength="25" required>
+        <label for="email">Email</label>
+        <input id="js-email-input" type="email" placeholder="you@example.com" required>
+        <textarea id="js-message-input" type="text" placeholder="Your Message" required></textarea>
+      </form>
+      <div class="pop-up-buttons">
+       <button class="js-close-popup">Close</button>
+       <button class="js-send-message-button">Send Message</button>
+      </div>
+    </div>
+
+    <div id="popup-background" class="background"></div>
+    <!-- End of Contact Me Pop-up-->
+
+    <!-- Games Section -->
+    <section class="section-container" id="zeo">
+      <div class="section-parent">
+        <!-- Zeo Game -->
+        <div class="game-title">Zeo</div>
+        <picture class="game-picture"><img src="../Images/zeo_demo_image.png"
+          style="max-width: 100%; max-height: 100%; border-radius: 10px;">
+        </picture>
+        <div id="game-description-container">
+          <div class="game-description-parent">
+            <div name="genre">
+              <p class="description-title">Genre:
+                <img src="../Images/fantasy_genre_icon.png" alt="#">
+              </p>
+              <p class="description-text">
+                3D Action/Fantasy - My first 3D project.
+              </p>
+            </div>
+            <hr>
+            <div name="gameplay">
+              <p class="description-title">Gameplay:
+                <img src="../Images/gameplay_icon.png" alt="#">
+              </p>
+              <p class="description-text">
+                Basic "W-A-S-D" keyboard movement, "SPACEBAR" to jump,
+                "L-Shift" and "Tab" keys for special abilities,
+                "Alpha NUMs" for abilities selection & mouse controls.
+                <br><br>
+                Enemies fight differently, make sure to learn the controls
+                and your special abilities.
+              </p>
+            </div>
+            <hr>
+            <div name="description">
+              <p class="description-title">Description:
+                <img src="../Images/description_icon.png" alt="#">
+              </p>
+              <p class="description-text">
+                Zeo is a 3D action/fantasy game with 4 different locations to play in.
+                The character has multiple special abilities and a Godmode with basic
+                keyboard & mouse controls.
+                <br><br>
+                Take a little bit of time to learn the controls
+                properly and if necessary, press "ESC" to pause and take a look there
+                for extra information or simply a reminder on what to do.
+                <br><br>
+                Each location has puzzles, each puzzle unlocks a collectible
+                and these collectibles will progress the game further.
+              </p>
+            </div>
+            <hr>
+            <div name="requirements">
+              <p class="description-title">Requirements:
+                <img src="../Images/requirements_icon.png" alt="#">
+              </p>
+              <p class="description-text">
+                No specific requirements. The game is fairly light.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div id="buttons-parent">
+          <a href="https://mega.nz/file/xNIRACZI#QULe-faOtLcfJJRvOO-ea2rWgJ1a43-jS99rVJYx4FA">
+            <button class="buttons">Download (PC)</button>
+          </a>
+        </div>
+        <!-- End of Buttons -->
+      </div>
+    </section>
+    <!-- End of Games Section -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-columns" name="personal">
+        <div class="footer-titles">Personal</div>
+        <p>
+          <a href="aboutme.html">About Me</a>
+          <a href="#" class="js-open-popup">Contact Me</a>
+          <a href="https://gofund.me/626b8087">Donate<br><br></a>
+        </p>
+      </div>
+
+      <div class="footer-columns" name="game-related">
+        <div class="footer-titles">
+          Game Related</div>
+          <a href="../HTML/2dgames.html">2D Games</a>
+          <a href="../HTML/3dgames.html">3D Games</a>
+          <a href="../HTML/assets_showcase.html">Showcase</a>
+      </div>
+
+      <div class="footer-columns" name="social-media">
+        <div class="footer-titles">
+        Social Media</div>
+        <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
+        <a href="https://www.twitch.tv/plgamedev">Twitch</a>
+        <a href="https://www.instagram.com/phillipe.lira/">Instagram<br><br></a>
+        <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
+        <a href="https://twitter.com/lira_phillipe">Twitter</a>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="../JavaScript/general.js"></script>
+  </body>
+</html>

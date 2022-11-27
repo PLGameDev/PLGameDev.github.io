@@ -1,0 +1,146 @@
+@media(max-width: 2560px){
+    
+}
+
+@media(max-width: 1920px){
+    
+}
+
+@media(max-width: 1600px){
+    .personal-info-parent{
+      margin-left: 10%;
+    }
+}
+
+@media(max-width: 1440px){
+    
+}
+
+@media(max-width: 1280px){
+    .job-title{
+      font-size: 35px;
+    }
+}
+
+@media(max-width: 1080px){    
+    .personal-info-parent{
+      flex-basis: 25%;
+    }
+
+    .personal-info-text{
+      margin: 50px 0;
+      font-size: medium;
+    }
+}
+
+@media(max-width: 1024px){
+    
+}
+
+@media(max-width: 962px){
+    #nav-bar button{
+        display: none;
+    }
+      
+    #hidden-buttons-icon{
+        display: inline-flex;
+    }
+      
+    #main-section{
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 100%;
+    }
+  
+    .myphoto{
+        flex-basis: 80%;
+        flex-shrink: 1;
+        order: 1;
+        margin: 0 0 0 50px;
+    }
+  
+    .personal-info-parent{
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        order: 2;
+        margin: 0 5%;
+    }
+  
+    #info-container{
+        flex-wrap: wrap;
+    }
+  
+    .info-parent{
+        flex-basis: 80%;
+        margin: 50px auto;
+    }
+  
+    #footer{
+          flex-wrap: wrap;
+          order: 4;
+    }
+  
+    .footer-columns{
+          flex-basis: 100%;
+    }
+}
+
+@media(max-width: 810px){
+    
+}
+
+@media(max-width: 768px){
+    
+}
+
+@media(max-width: 720px){
+    
+}
+
+@media(max-width: 640px){
+    
+}
+
+@media(max-width: 601px){
+    .job-title{
+        font-size: 25px;
+    }
+
+    .custom-letters{
+        font-size: 40px;
+    }
+
+    .personal-info-parent{
+        margin: 0 10%;
+    }
+
+    .info-parent{
+        margin: 50px 5%;
+    }
+}
+
+@media(max-width: 540px){
+    
+}
+
+@media(max-width: 425px){
+    .myphoto{
+        margin: 0 0 0 30px;
+    }
+}
+
+@media(max-width: 375px){
+    
+}
+
+@media(max-width: 320px){
+    .job-title{
+        font-size: 20px;
+    }
+
+    .custom-letters{
+        font-size: 35px;
+    }
+}

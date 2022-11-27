@@ -1,0 +1,129 @@
+@media(max-width: 2560px){
+    
+}
+
+@media(max-width: 1920px){
+    
+}
+
+@media(max-width: 1600px){
+    
+}
+
+@media(max-width: 1440px){
+    .aboutme-block{
+        flex-basis: 40%;
+        margin-bottom: 100px;
+    }
+
+    #footer{
+        margin: 0;
+    }
+}
+
+@media(max-width: 1280px){
+    
+}
+
+@media(max-width: 1080px){
+    
+}
+
+@media(max-width: 1024px){
+    .aboutme-block{
+        flex-basis: 80%;
+    }
+}
+
+@media(max-width: 962px){
+    #nav-bar button{
+        display: none;
+    }
+
+    #hidden-buttons-icon{
+        display: inline-flex;
+    }
+}
+
+@media(max-width: 810px){
+    #footer{
+        flex-wrap: wrap;
+    }
+
+    .footer-columns{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 768px){
+    
+}
+
+@media(max-width: 720px){
+    
+}
+
+@media(max-width: 640px){
+    
+}
+
+@media(max-width: 601px){
+    .my-photo{
+        width: 80%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .my-name{
+        margin: auto;
+        font-size: x-large;
+    }
+
+    .personal-info-container{
+        margin: 10% auto;
+    }
+}
+
+@media(max-width: 540px){
+    .personal-info-container{
+        margin: 10% 20%;
+    }
+
+    .aboutme-title img{
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .info-title:last-child{
+        margin-top: 60px;
+    }
+
+    #aboutme-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 425px){
+    #aboutme-buttons button{
+        margin-top: 25px;
+    }
+
+    .aboutme-block{
+        flex-basis: 90;
+        padding: 30px;
+    }
+
+    .aboutme-title{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 375px){
+    
+}
+
+@media(max-width: 320px){
+    
+}

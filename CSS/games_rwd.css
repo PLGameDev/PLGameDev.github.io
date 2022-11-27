@@ -1,0 +1,170 @@
+@media(max-width: 2560px){
+    
+}
+
+@media(max-width: 1920px){
+    
+}
+
+@media(max-width: 1600px){
+    .description-title{
+        font-size: small;
+    }
+}
+
+@media(max-width: 1440px){
+    
+}
+
+@media(max-width: 1280px){
+    #game-description-container{
+        margin: auto 0 40px 0;
+    }
+}
+
+@media(max-width: 1080px){    
+    #game-description-container{
+        flex-wrap: wrap;
+    }
+
+    .game-picture{
+        height: 425px;
+    }
+
+    .description-title{
+        width: 100%;
+    }
+
+    .description-text{
+        width: 100%;
+    }
+
+    .game-description-parent img{
+        max-width: 10%;
+        max-height: 10%;
+    }
+
+    .description-title{
+        font-size: medium;
+    }
+}
+
+@media(max-width: 1024px){
+    
+}
+
+@media(max-width: 962px){
+    #nav-bar button{
+        display: none;
+    }
+
+    #hidden-buttons-icon{
+        display: inline-flex;
+    }
+
+    .section-parent{
+        flex-basis: 90%;
+    }
+
+    .game-picture{
+        height: 475px;
+    }
+
+    #footer{
+        flex-wrap: wrap;
+    }
+
+    .footer-columns{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 810px){
+    .game-picture{
+        height: 425px;
+    }
+}
+
+@media(max-width: 768px){
+    .game-picture{
+        height: 400px;
+    }
+
+    .game-description-parent img{
+        max-width: 15%;
+        max-height: 15%;
+    }
+}
+
+@media(max-width: 720px){
+    .game-picture{
+        height: 375px;
+    }
+}
+
+@media(max-width: 640px){
+    .game-picture{
+        height: 325px;
+    }
+}
+
+@media(max-width: 601px){
+    .game-picture{
+        height: 300px;
+    }
+}
+
+@media(max-width: 540px){
+    .section-parent{
+        width: 80%;
+    }
+
+    .game-description-parent{
+        padding: 10px 20px;
+    }
+
+    .game-picture{
+        height: 275px;
+    }
+
+    .buttons{
+        margin: auto 5%;
+    }
+}
+
+@media(max-width: 425px){
+    #buttons-parent{
+        flex-wrap: wrap;
+    }
+
+    .buttons{
+        flex-basis: 45%;
+        margin: 10px auto;
+    }
+    
+    .game-picture{
+        height: 215px;
+    }
+}
+
+@media(max-width: 375px){
+    .buttons{
+        flex-basis: 50%;
+        margin: 10px auto;
+    }
+    
+    .game-picture{
+        height: 175px;
+    }
+}
+
+@media(max-width: 320px){
+    .buttons{
+        flex-basis: 65%;
+        margin: 10px auto;
+    }
+    
+    .game-picture{
+        height: 165px;
+    }
+}

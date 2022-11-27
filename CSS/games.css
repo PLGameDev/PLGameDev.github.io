@@ -1,0 +1,146 @@
+@keyframes title-anim{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* --------------- List of 2D Games --------------------*/
+#fatebringer{
+    display: flex;
+}
+#savior{
+    display: none;
+}
+#grumpy{
+    display: none;
+}
+/* --------------- End of List of 2D Games --------------------*/
+
+
+/* --------------- List of 3D Games --------------------*/
+#zeo{
+    display: flex;
+}
+/* --------------- End of List of 3D Games --------------------*/
+
+
+/* --------------- Container Section --------------------*/
+.section-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 100px 0;
+}
+      
+.section-parent{
+    flex-basis: 70%;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #16161a;
+    box-shadow: 0px 0px 10px #16161a;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+      
+.game-title{
+    display: block;
+    margin: 20px 0 30px 0;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(to bottom, #24252A, #1d1d21);
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 1px solid #edf0f1;
+    border-bottom: 1px solid #edf0f1;
+    color: #00cfff;
+    text-shadow: 0 0 15px #005ead;
+
+    animation-name: title-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+      
+.game-picture{
+    display: block;
+    height: 500px;
+}
+      
+#game-description-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 0;
+    padding: 10px;
+    background: linear-gradient(to bottom, #24252A, #1d1d21);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.game-description-parent{
+    margin: 10px 0;
+    padding: 10px 40px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.game-description-parent img{
+    position: relative;
+    right: 0;
+    max-width: 20%;
+    max-height: 20%;
+    margin: auto 0px auto auto;
+}
+
+.description-title{
+    display: inline-flex;
+    width: 20%;
+    padding: 10px 0;
+    margin-right: 20px;
+    color: #edf0f1;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #edf0f1;
+    border-bottom: 1px solid #edf0f1;
+    background: linear-gradient(to bottom, #00cfff, #005ead);
+    background-clip: "";
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.description-text{
+    display: inline-flex;
+    width: 75%;
+    text-align: justify;
+}
+
+#buttons-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons{
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    margin: auto 50px;
+    background: linear-gradient(to right, #00cfff, #005ead);
+    border: 0px solid transparent;
+}
+/* --------------- End of Container Section --------------------*/
