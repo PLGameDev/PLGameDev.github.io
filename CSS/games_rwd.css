@@ -127,8 +127,12 @@
         height: 275px;
     }
 
+    #buttons-parent{
+        flex-direction: column;
+    }
+
     .buttons{
-        margin: auto 5%;
+        margin: 15px 0;
     }
 }
 

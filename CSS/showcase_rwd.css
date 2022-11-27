@@ -65,19 +65,18 @@
     
 }
 @media(max-width: 540px){
-    
+    .buttons-to-other-pages{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons-to-other-pages button{
+        margin: 15px 0;
+    }
 }
 @media(max-width: 425px){
     .section-description{
         padding: 5px;
-    }
-
-    .buttons-to-other-pages{
-        flex-wrap: wrap;
-    }
-
-    .buttons-to-other-pages button{
-        margin: 20px 40px;
     }
 }
 @media(max-width: 375px){
