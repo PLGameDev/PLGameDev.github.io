@@ -12,386 +12,386 @@
     <title>PL-GameDev - Showcase</title>
 </head>
 <body>
-    <!-- Navigation section of the webpage -->
-    <nav id="nav-bar">
-      <a href="../index.html" id="logo">
-        <img src="../Images/official_logo.png"
-        style="max-width: 100%; max-height: 100%; border-radius: 100px;"></a>
-      <a href="2dgames.html">
-        <button class="nobg-nav-buttons">2D Games</button></a>
-      <a href="3dgames.html" >
-        <button class="nobg-nav-buttons">3D Games</button></a>
-      <a href="../index.html">
-        <button class="nobg-nav-buttons">Homepage</button></a>
-      <a href="https://gofund.me/626b8087">
-        <button class="withbg-nav-buttons">Donate</button></a>
-      <a href="#">
-        <button class="withbg-nav-buttons js-open-popup">Contact Me</button></a>
-      
-      <!-- Mobile viewport -->
-      <div id="hidden-buttons-icon" onclick="mobileButtons()">
-        <img src="../Images/hidden_buttons_icon.png" alt="#"
-          style="max-width: 100%; max-height: 100%; margin: auto;">
-      </div>
-      
-      <ul id="buttons-list">
-        <li><a href="../HTML/2dgames.html">2D Games</a></li>
-        <hr style="width: 100%;">
-        <li><a href="../HTML/3dgames.html">3D Games</a></li>
-        <hr style="width: 100%;">
-        <li><a href="../HTML/assets_showcase.html">Showcase</a></li>
-        <hr style="width: 100%;">
-        <li><a href="https://gofund.me/626b8087">Donate</a></li>
-        <hr style="width: 100%;">
-        <li><a href="#" class="js-open-popup">Contact Me</a></li>
-      </ul>
-      <!-- End of Mobile viewport -->
-    </nav>
-    <!-- End of navigation section -->
-    
-    <div style="color: #b21212;
-    font-weight: bold;
-    margin-top: 50px;
-    text-align: center;
-    text-shadow: 0 0 5px black;">
-      PAGE IN DEVELOPMENT</div>
-
-    <!-- Contact Me Pop-up -->
-    <div id="contactme-popup-container" class="js-popup">
-      <img src="../Images/contactme_popup_icon.png" alt="#">
-      <p>Contact Me</p>
-      <form action="" class="popup-parent">
-        <label for="name">Name</label>
-        <input id="js-name-input" type="text" placeholder="Please use your real name." maxlength="25" required>
-        <label for="email">Email</label>
-        <input id="js-email-input" type="email" placeholder="you@example.com" required>
-        <textarea id="js-message-input" type="text" placeholder="Your Message" required></textarea>
-      </form>
-      <div class="pop-up-buttons">
-       <button class="js-close-popup">Close</button>
-       <button class="js-send-message-button">Send Message</button>
-      </div>
+  <!-- LIGHT / DARK MODE -->
+  <aside name="light-dark-mode">
+    <p>Modes</p>
+    <div id="light-mode">
+      <div class="js-light-mode-text">Light Mode</div>
     </div>
+    <div id="dark-mode">
+      <div class="js-dark-mode-text">Original Mode</div>
+    </div>
+  </aside>
+  <!-- END OF LIGHT / DARK MODE -->
 
-    <div id="popup-background" class="background"></div>
-    <!-- End of Contact Me Pop-up-->
+  <!-- Navigation section of the webpage -->
+  <nav id="nav-bar">
+    <a href="../index.html" id="logo">
+      <img src="../Images/official_logo.png"
+      style="max-width: 100%; max-height: 100%; border-radius: 100px;"></a>
+    <a href="2dgames.html">
+      <button class="nobg-nav-buttons">2D Games</button></a>
+    <a href="3dgames.html" >
+      <button class="nobg-nav-buttons">3D Games</button></a>
+    <a href="../index.html">
+      <button class="nobg-nav-buttons">Homepage</button></a>
+    <a href="https://gofund.me/626b8087">
+      <button class="withbg-nav-buttons">Donate</button></a>
+    <a href="#">
+      <button class="withbg-nav-buttons js-open-popup">Contact Me</button></a>
+    
+    <!-- Mobile viewport -->
+    <div id="hidden-buttons-icon" onclick="mobileButtons()">
+      <img src="../Images/hidden_buttons_icon.png" alt="#"
+        style="max-width: 100%; max-height: 100%; margin: auto;">
+    </div>
+    
+    <ul id="buttons-list">
+      <li><a href="../HTML/2dgames.html">2D Games</a></li>
+      <hr style="width: 100%;">
+      <li><a href="../HTML/3dgames.html">3D Games</a></li>
+      <hr style="width: 100%;">
+      <li><a href="../HTML/assets_showcase.html">Showcase</a></li>
+      <hr style="width: 100%;">
+      <li><a href="https://gofund.me/626b8087">Donate</a></li>
+      <hr style="width: 100%;">
+      <li><a href="#" class="js-open-popup">Contact Me</a></li>
+    </ul>
+    <!-- End of Mobile viewport -->
+  </nav>
+  <!-- End of navigation section -->
+  
 
-    <!-- Showcase -->
-    <main id="main-section-container">
-      <!-- VFX & 3D Models -->
-      <section class="section-container showcase-page-1" name="vfx">
-        <div class="section-parent">
-            <div class="section-title">Visual Effects</div>
+  <div style="color: #c71212;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;">
+    PAGE IN DEVELOPMENT</div>
 
-            <div class="content-parent">
-                <video class="section-video" controls
-                style="max-width: 100%; max-height: 100%;">
-                    <source src="movie.mp4" type="video/mp4">
-                    Your browser does not support this video type.
-                </video>
 
-                <div class="section-description">
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Game:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        The Forbidden Curse</p>
-                    <hr>
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Softwares:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        Unity (VFX Graph), After Effects, Blender</p>
-                    <hr>
-                    <p>
-                        Visual Effects created for my game "The Forbidden Curse".
-                        <br><br>
-                        Character abilities, muzzle flashes, impact explosions,
-                        enemy abilities, attack indicators and so on.
-                        <br><br><br><br>
-                        If you are interested in using these VFXs for your own
-                        Unity game or simply want to ask something,
-                        please contact me.<br>
-                        
-                        <button class="content-button js-open-popup">
-                          Send Message
-                        </button>
-                    </p>
-                </div>
-            </div>
+  <!-- Contact Me Pop-up -->
+  <div id="contactme-popup-container" class="js-popup">
+    <img src="../Images/contactme_popup_icon.png" alt="#">
+    <p>Contact Me</p>
+    <form action="" class="popup-parent">
+      <label for="name">Name</label>
+      <input id="js-name-input" type="text" placeholder="Please use your real name." maxlength="25" required>
+      <label for="email">Email</label>
+      <input id="js-email-input" type="email" placeholder="you@example.com" required>
+      <textarea id="js-message-input" type="text" placeholder="Your Message" required></textarea>
+    </form>
+    <div class="pop-up-buttons">
+     <button class="js-close-popup">Close</button>
+     <button class="js-send-message-button">Send Message</button>
+    </div>
+  </div>
+  <div id="popup-background" class="background"></div>
+  <!-- End of Contact Me Pop-up-->
+  
+
+  <!-- Showcase -->
+  <main id="main-section-container">
+    <!-- VFX & 3D Models -->
+    <section class="section-container showcase-page-1" name="vfx">
+      <div class="section-parent js-block-parent">
+        <div class="section-title js-title-box">Visual Effects</div>
+        <div class="content-parent">
+          <video class="section-video" controls
+          style="max-width: 100%; max-height: 100%;">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support this video type.
+          </video>
+          <div class="section-description">
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Game:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              The Forbidden Curse</p>
+            <hr>
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Softwares:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              Unity (VFX Graph), After Effects, Blender</p>
+            <hr>
+            <p>
+              Visual Effects created for my game "The Forbidden Curse".
+              <br><br>
+              Character abilities, muzzle flashes, impact explosions,
+              enemy abilities, attack indicators and so on.
+              <br><br><br><br>
+              If you are interested in using these VFXs for your own
+              Unity game or simply want to ask something,
+              please contact me.<br>
+              
+              <button class="content-button js-open-popup">
+                Send Message
+              </button>
+            </p>
+          </div>
         </div>
-      </section>
-
-      <section class="section-container showcase-page-1" name="3d-models">
-        <div class="section-parent">
-            <div class="section-title">3D Models</div>
-
-            <div class="content-parent">
-                <video class="section-video" controls
-                style="max-width: 100%; max-height: 100%;">
-                    <source src="movie.mp4" type="video/mp4">
-                    Your browser does not support this video type.
-                </video>
-                
-                <div class="section-description">
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Game:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        The Forbidden Curse</p>
-                    <hr>
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Software:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        Blender</p>
-                    <hr>
-                    <p>
-                        3D models created for my game "The Forbidden Curse".
-                        <br><br>
-                        All models shown in the video were based on sketches
-                        drawn in Krita and Photoshop with a drawing tablet.
-                        <br><br><br><br>
-                        If you are interested in using these models for your own
-                        Unity game or simply want to ask something,
-                        please contact me.<br>
-                        
-                        <button class="content-button js-open-popup">
-                          Send Message
-                        </button>
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!-- END OF VFX & 3D Models -->
-
-      <!-- CONCEPT ART & ANIMATIONS -->
-      <section class="section-container showcase-page-2" name="conpet-art">
-        <div class="section-parent">
-            <div class="section-title">Concept Art</div>
-
-            <div class="content-parent">
-                <video class="section-video" controls
-                style="max-width: 100%; max-height: 100%;">
-                    <source src="movie.mp4" type="video/mp4">
-                    Your browser does not support this video type.
-                </video>
-
-                <div class="section-description">
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Game:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        The Forbidden Curse</p>
-                    <hr>
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Softwares:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        Krita, Photoshop</p>
-                    <hr>
-                    <p>
-                        Concept Art created for my game "The Forbidden Curse".
-                        <br><br>
-                        Everything was first drawn as a rough sketch, upon deciding
-                        on keeping the drawing it was later finished in Krita or
-                        Photoshop.
-                        <br><br><br><br>
-                        If you are interested in using my concept art for your own
-                        Unity game or simply want to ask something,
-                        please contact me.<br>
-                        
-                        <button class="content-button js-open-popup">
-                          Send Message
-                        </button>
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
-
-      <section class="section-container showcase-page-2" name="animations">
-        <div class="section-parent">
-            <div class="section-title">Animations</div>
-
-            <div class="content-parent">
-                <video class="section-video" controls
-                style="max-width: 100%; max-height: 100%;">
-                    <source src="movie.mp4" type="video/mp4">
-                    Your browser does not support this video type.
-                </video>
-
-                <div class="section-description">
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Game:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        The Forbidden Curse</p>
-                    <hr>
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Softwares:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        Blender, Unity</p>
-                    <hr>
-                    <p>
-                        Animations created for my game "The Forbidden Curse".
-                        <br><br>
-                        Animations are very important to give the game a certain
-                        "feel" to it. It can drastically improve the gameplay
-                        feeling for the player as well as invoking emotions.
-                        <br><br><br>
-                        If you are interested in using these animations for your own
-                        Unity game or simply want to ask something,
-                        please contact me.<br>
-                        
-                        <button class="content-button js-open-popup">
-                          Send Message
-                        </button>
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!-- END OF CONCEPT ART & ANIMATIONS -->
-
-      <!-- SCRIPT & UI/HUD ELEMENTS -->
-      <section class="section-container showcase-page-3" name="scripts">
-        <div class="section-parent">
-            <div class="section-title">Scripts</div>
-
-            <div class="content-parent">
-                <video class="section-video" controls
-                style="max-width: 100%; max-height: 100%;">
-                    <source src="movie.mp4" type="video/mp4">
-                    Your browser does not support this video type.
-                </video>
-
-                <div class="section-description">
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Game:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        The Forbidden Curse</p>
-                    <hr>
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Softwares:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        Unity, Visual Studio</p>
-                    <hr>
-                    <p>
-                        Scripts created for my game "The Forbidden Curse".
-                        <br><br>
-                        Character controller, AI, trigger events, weather systems,
-                        animations and more. All coded by me.
-                        <br><br><br><br>
-                        If you are interested in understanding the code for your own
-                        Unity game or simply want to ask something,
-                        please contact me.<br>
-                        
-                        <button class="content-button js-open-popup">
-                          Send Message
-                        </button>
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
-
-      <section class="section-container showcase-page-3" name="ui-hud-elements">
-        <div class="section-parent">
-            <div class="section-title">UI & HUD Elements</div>
-            <div class="content-parent">
-                <video class="section-video" controls
-                style="max-width: 100%; max-height: 100%;">
-                    <source src="movie.mp4" type="video/mp4">
-                    Your browser does not support this video type.
-                </video>
-                
-                <div class="section-description">
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Game:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        The Forbidden Curse</p>
-                    <hr>
-                    <p style="display: inline-block;
-                    color: #00c3ff; font-weight: bold;">
-                        Softwares:</p>
-                    <p style="display: inline-block; margin-left: 10px;">
-                        Photoshop, Illustrator, After Effects, Krita</p>
-                    <hr>
-                    <p>
-                        UI & HUD elements created for my game "The Forbidden Curse".
-                        <br><br>
-                        Healthbars, ability icons, indicators, 2D animations,
-                        menus, buttons and more.
-                        <br><br><br>
-                        If you are interested in using these UI or HUD elements
-                        for your own Unity game or simply want to ask something,
-                        please contact me.<br>
-
-                        <button class="content-button js-open-popup">
-                          Send Message
-                        </button>
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!-- END OF SCRIPT & UI/HUD ELEMENTSe -->
-
-      <!-- Other Pages Buttons -->
-      <div class="buttons-to-other-pages">
-        <a href="#">
-          <button class="js-showcase-previous-button">Previous</button>
-        </a>
-
-        <a href="../index.html">
-          <button>Homepage</button>
-        </a>
-
-        <a href="#">
-          <button class="js-showcase-next-button">Next (1/3)</button>
-        </a>
-        <!-- End of Other Pages Buttons -->
       </div>
-    </main>
-    <!-- End of Showcase -->
+    </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-columns" name="personal">
-        <div class="footer-titles">Personal</div>
-        <p>
-          <a href="aboutme.html">About Me</a>
-          <a href="#" class="js-open-popup">Contact Me</a>
-          <a href="https://gofund.me/626b8087">Donate<br><br></a>
-        </p>
+    <section class="section-container showcase-page-1" name="3d-models">
+      <div class="section-parent js-block-parent">
+        <div class="section-title js-title-box">3D Models</div>
+        <div class="content-parent">
+          <video class="section-video" controls
+          style="max-width: 100%; max-height: 100%;">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support this video type.
+          </video>
+          
+          <div class="section-description">
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Game:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              The Forbidden Curse</p>
+            <hr>
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Software:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              Blender</p>
+            <hr>
+            <p>
+              3D models created for my game "The Forbidden Curse".
+              <br><br>
+              All models shown in the video were based on sketches
+              drawn in Krita and Photoshop with a drawing tablet.
+              <br><br><br><br>
+              If you are interested in using these models for your own
+              Unity game or simply want to ask something,
+              please contact me.<br>
+              
+              <button class="content-button js-open-popup">
+                Send Message
+              </button>
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- END OF VFX & 3D Models -->
 
-      <div class="footer-columns" name="game-related">
-        <div class="footer-titles">
-          Game Related</div>
-          <a href="../HTML/2dgames.html">2D Games</a>
-          <a href="../HTML/3dgames.html">3D Games</a>
-          <a href="../HTML/assets_showcase.html">Showcase</a>
+    <!-- CONCEPT ART & ANIMATIONS -->
+    <section class="section-container showcase-page-2" name="conpet-art">
+      <div class="section-parent js-block-parent">
+        <div class="section-title js-title-box">Concept Art</div>
+        <div class="content-parent">
+          <video class="section-video" controls
+          style="max-width: 100%; max-height: 100%;">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support this video type.
+          </video>
+          <div class="section-description">
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Game:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              The Forbidden Curse</p>
+            <hr>
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Softwares:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              Krita, Photoshop</p>
+            <hr>
+            <p>
+              Concept Art created for my game "The Forbidden Curse".
+              <br><br>
+              Everything was first drawn as a rough sketch, upon deciding
+              on keeping the drawing it was later finished in Krita or
+              Photoshop.
+              <br><br><br><br>
+              If you are interested in using my concept art for your own
+              Unity game or simply want to ask something,
+              please contact me.<br>
+              
+              <button class="content-button js-open-popup">
+                Send Message
+              </button>
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="footer-columns" name="social-media">
-        <div class="footer-titles">
-        Social Media</div>
-        <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
-        <a href="https://www.twitch.tv/plgamedev">Twitch</a>
-        <a href="https://www.instagram.com/phillipe.lira/">Instagram<br><br></a>
-        <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
-        <a href="https://twitter.com/lira_phillipe">Twitter</a>
+    <section class="section-container showcase-page-2" name="animations">
+      <div class="section-parent js-block-parent">
+        <div class="section-title js-title-box">Animations</div>
+        <div class="content-parent">
+          <video class="section-video" controls
+          style="max-width: 100%; max-height: 100%;">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support this video type.
+          </video>
+          <div class="section-description">
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Game:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              The Forbidden Curse</p>
+            <hr>
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Softwares:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              Blender, Unity</p>
+            <hr>
+            <p>
+              Animations created for my game "The Forbidden Curse".
+              <br><br>
+              Animations are very important to give the game a certain
+              "feel" to it. It can drastically improve the gameplay
+              feeling for the player as well as invoking emotions.
+              <br><br><br>
+              If you are interested in using these animations for your own
+              Unity game or simply want to ask something,
+              please contact me.<br>
+              
+              <button class="content-button js-open-popup">
+                Send Message
+              </button>
+            </p>
+          </div>
+        </div>
       </div>
-    </footer>
-    <!-- End of Footer -->
+    </section>
+    <!-- END OF CONCEPT ART & ANIMATIONS -->
 
-    <script src="../JavaScript/general.js"></script>
+    <!-- SCRIPT & UI/HUD ELEMENTS -->
+    <section class="section-container showcase-page-3" name="scripts">
+      <div class="section-parent js-block-parent">
+        <div class="section-title js-title-box">Scripts</div>
+        <div class="content-parent">
+          <video class="section-video" controls
+          style="max-width: 100%; max-height: 100%;">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support this video type.
+          </video>
+          <div class="section-description">
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Game:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              The Forbidden Curse</p>
+            <hr>
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Softwares:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              Unity, Visual Studio</p>
+            <hr>
+            <p>
+              Scripts created for my game "The Forbidden Curse".
+              <br><br>
+              Character controller, AI, trigger events, weather systems,
+              animations and more. All coded by me.
+              <br><br><br><br>
+              If you are interested in understanding the code for your own
+              Unity game or simply want to ask something,
+              please contact me.<br>
+              
+              <button class="content-button js-open-popup">
+                Send Message
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container showcase-page-3" name="ui-hud-elements">
+      <div class="section-parent js-block-parent">
+        <div class="section-title js-title-box">UI & HUD Elements</div>
+        <div class="content-parent">
+          <video class="section-video" controls
+          style="max-width: 100%; max-height: 100%;">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support this video type.
+          </video>
+          
+          <div class="section-description">
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Game:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              The Forbidden Curse</p>
+            <hr>
+            <p style="display: inline-block;
+            color: #00c3ff; font-weight: bold;">
+              Softwares:</p>
+            <p style="display: inline-block; margin-left: 10px;">
+              Photoshop, Illustrator, After Effects, Krita</p>
+            <hr>
+            <p>
+              UI & HUD elements created for my game "The Forbidden Curse".
+              <br><br>
+              Healthbars, ability icons, indicators, 2D animations,
+              menus, buttons and more.
+              <br><br><br>
+              If you are interested in using these UI or HUD elements
+              for your own Unity game or simply want to ask something,
+              please contact me.<br>
+              <button class="content-button js-open-popup">
+                Send Message
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF SCRIPT & UI/HUD ELEMENTSe -->
+
+    <!-- Other Pages Buttons -->
+    <div class="buttons-to-other-pages">
+      <a href="#">
+        <button class="js-showcase-previous-button">Previous</button>
+      </a>
+      <a href="../index.html">
+        <button>Homepage</button>
+      </a>
+      <a href="#">
+        <button class="js-showcase-next-button">Next (1/3)</button>
+      </a>
+      <!-- End of Other Pages Buttons -->
+    </div>
+  </main>
+  <!-- End of Showcase -->
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-columns" name="personal">
+      <div class="footer-titles">Personal</div>
+      <p>
+        <a href="aboutme.html">About Me</a>
+        <a href="#" class="js-open-popup">Contact Me</a>
+        <a href="https://gofund.me/626b8087">Donate<br><br></a>
+      </p>
+    </div>
+    <div class="footer-columns" name="game-related">
+      <div class="footer-titles">
+        Game Related</div>
+        <a href="../HTML/2dgames.html">2D Games</a>
+        <a href="../HTML/3dgames.html">3D Games</a>
+        <a href="../HTML/assets_showcase.html">Showcase</a>
+    </div>
+    <div class="footer-columns" name="social-media">
+      <div class="footer-titles">
+      Social Media</div>
+      <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
+      <a href="https://www.twitch.tv/plgamedev">Twitch</a>
+      <a href="https://www.instagram.com/phillipe.lira/">Instagram<br><br></a>
+      <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
+      <a href="https://twitter.com/lira_phillipe">Twitter</a>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <script src="../JavaScript/general.js"></script>
 </body>
 </html>

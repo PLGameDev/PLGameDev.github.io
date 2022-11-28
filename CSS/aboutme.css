@@ -65,7 +65,6 @@
   font-size: xx-large;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: #edf0f1;
 }
 
 .personal-info-container{
@@ -79,7 +78,6 @@
   flex-direction: column;
   line-height: 30px;
   text-align: left;
-  color: #edf0f1;
   margin: 0 5px;
 }
 
@@ -121,7 +119,6 @@
   box-sizing: border-box;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  color: #edf0f1;
 
   animation-name: opacity-size-anim;
   animation-duration: 1s;

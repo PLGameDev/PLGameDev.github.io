@@ -12,6 +12,19 @@
   <title>PL-GameDev - About Me</title>
 </head>
 <body>
+  <!-- LIGHT / DARK MODE -->
+  <aside name="light-dark-mode">
+    <p>Modes</p>
+    <div id="light-mode">
+      <div class="js-light-mode-text">Light Mode</div>
+    </div>
+    <div id="dark-mode">
+      <div class="js-dark-mode-text">Original Mode</div>
+    </div>
+  </aside>
+  <!-- END OF LIGHT / DARK MODE -->
+
+
   <!-- Navigation section of the webpage -->
   <nav id="nav-bar">
     <a href="../index.html" id="logo">
@@ -49,6 +62,7 @@
   </nav>
   <!-- End of navigation section -->
 
+
   <!-- Contact Me Pop-up -->
   <div id="contactme-popup-container" class="js-popup">
     <img src="../Images/contactme_popup_icon.png" alt="#">
@@ -68,6 +82,7 @@
 
   <div id="popup-background" class="background"></div>
   <!-- End of Contact Me Pop-up-->
+
 
   <!-- Personal info section -->
   <main id="main-section-container">
@@ -110,9 +125,10 @@
   </main>
   <!-- End of personal info section -->
 
+
   <!-- About me section -->
   <section id="aboutme-section-container">
-    <div class="aboutme-block" name="childhood">
+    <div class="aboutme-block js-block-parent" name="childhood">
       <div class="aboutme-title">
         <p>Childhood</p>
         <img src="../Images/childhood_image.png" alt="#">
@@ -141,7 +157,7 @@
       </p>
     </div>
 
-    <div class="aboutme-block" name="adolescence">
+    <div class="aboutme-block js-block-parent" name="adolescence">
       <div class="aboutme-title">
         <p>Adolescence</p>
         <img src="../Images/adolescence_image.png" alt="#">
@@ -168,7 +184,7 @@
       </p>
     </div>
 
-    <div class="aboutme-block" name="adulthood">
+    <div class="aboutme-block js-block-parent" name="adulthood">
       <div class="aboutme-title">
         <p>Adulthood</p>
         <img src="../Images/adulthood_image.png" alt="#">
@@ -202,6 +218,7 @@
   </section>
   <!-- End of about me section -->
 
+
   <!-- Footer -->
   <footer id="footer">
     <div class="footer-columns" name="personal">
@@ -232,6 +249,7 @@
     </div>
   </footer>
   <!-- End of Footer -->
+
 
   <script src="../JavaScript/general.js"></script>
 </body>

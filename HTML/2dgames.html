@@ -12,6 +12,19 @@
     <title>PL-GameDev - 2D Games</title>
   </head>
   <body>
+    <!-- LIGHT / DARK MODE -->
+    <aside name="light-dark-mode">
+      <p>Modes</p>
+      <div id="light-mode">
+        <div class="js-light-mode-text">Light Mode</div>
+      </div>
+      <div id="dark-mode">
+        <div class="js-dark-mode-text">Original Mode</div>
+      </div>
+    </aside>
+    <!-- END OF LIGHT / DARK MODE -->
+
+    
     <!-- Navigation section of the webpage -->
     <nav id="nav-bar">
       <a href="../index.html" id="logo">
@@ -49,6 +62,7 @@
     </nav>
     <!-- End of navigation section -->
 
+
     <!-- Contact Me Pop-up -->
     <div id="contactme-popup-container" class="js-popup">
       <img src="../Images/contactme_popup_icon.png" alt="#">
@@ -69,15 +83,16 @@
     <div id="popup-background" class="background"></div>
     <!-- End of Contact Me Pop-up-->
     
+
     <!-- Games Section -->
     <section class="section-container" id="fatebringer">
-      <div class="section-parent">
-        <div class="game-title">Fatebringer</div>
+      <div class="section-parent js-block-parent">
+        <div class="game-title js-title-box">Fatebringer</div>
         <picture class="game-picture">
           <img src="../Images/Fatebringer_Demo_image.png"
           style="max-width: 100%; max-height: 100%; border-radius: 10px">
         </picture>
-        <div id="game-description-container">
+        <div id="game-description-container" class="js-game-description">
           <div class="game-description-parent">
             <div name="genre">
               <p class="description-title">Genre:
@@ -126,9 +141,8 @@
             </div>
           </div>
           <!-- Disclaimer -->
-          <div name="disclaimer-parent" style="background-color: #16161a;
-          padding: 10px; border-radius: 10px; margin: 30px 0;">
-            <p style="color: #af2222; font-weight: bold;
+          <div id="disclaimer" class="js-block-parent" name="disclaimer-parent">
+            <p style="color: #ca0909; font-weight: bold;
             text-transform: uppercase; letter-spacing: 3px;">
               Disclaimer:
             </p>
@@ -157,13 +171,13 @@
     </section>
 
     <section class="section-container" id="savior">
-      <div class="section-parent">
-        <div class="game-title">Savior</div>
+      <div class="section-parent js-block-parent">
+        <div class="game-title js-title-box">Savior</div>
         <picture class="game-picture">
           <img src="../Images/savior_demo_image.png"
           style="max-width: 100%; max-height: 100%; border-radius: 10px">
         </picture>
-        <div id="game-description-container">
+        <div id="game-description-container" class="js-game-description">
           <div class="game-description-parent">
             <div name="genre">
               <p class="description-title">Genre:
@@ -231,13 +245,13 @@
     </section>
 
     <section class="section-container" id="grumpy">
-      <div class="section-parent">
-        <div class="game-title">Grumpy</div>
+      <div class="section-parent js-block-parent">
+        <div class="game-title js-title-box">Grumpy</div>
         <picture class="game-picture">
           <img src="../Images/grumpy_demo_image.png"
           style="max-width: 100%; max-height: 100%; border-radius: 10px">
         </picture>
-        <div id="game-description-container">
+        <div id="game-description-container" class="js-game-description">
           <div class="game-description-parent">
             <div name="genre">
               <p class="description-title">Genre:
@@ -295,6 +309,7 @@
     </section>
     <!-- End of Games Section -->
 
+
     <!-- Footer -->
     <footer id="footer">
       <div class="footer-columns" name="personal">
@@ -325,6 +340,7 @@
       </div>
     </footer>
     <!-- End of Footer -->
+
 
     <script src="../JavaScript/general.js"></script>
   </body>

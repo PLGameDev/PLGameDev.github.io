@@ -12,133 +12,142 @@
     <title>PL-GameDev - Certificates</title>
 </head>
 <body>
-    <!-- Navigation section of the webpage -->
-    <nav id="nav-bar">
-        <a href="../index.html" id="logo">
-          <img src="../Images/official_logo.png"
-          style="max-width: 100%; max-height: 100%; border-radius: 100px;"></a>
-        <a href="2dgames.html">
-          <button class="nobg-nav-buttons">2D Games</button></a>
-        <a href="3dgames.html" >
-          <button class="nobg-nav-buttons">3D Games</button></a>
-        <a href="assets_showcase.html">
-          <button class="nobg-nav-buttons">Showcase</button></a>
-        <a href="https://gofund.me/626b8087">
-          <button class="withbg-nav-buttons">Donate</button></a>
-        <a href="#">
-          <button class="withbg-nav-buttons js-open-popup">Contact Me</button></a>
-        
-        <!-- Mobile viewport -->
-        <div id="hidden-buttons-icon" onclick="mobileButtons()">
-        <img src="../Images/hidden_buttons_icon.png" alt="#"
-          style="max-width: 100%; max-height: 100%; margin: auto;">
-        </div>
-
-        <ul id="buttons-list">
-          <li><a href="../HTML/2dgames.html">2D Games</a></li>
-          <hr style="width: 100%;">
-          <li><a href="../HTML/3dgames.html">3D Games</a></li>
-          <hr style="width: 100%;">
-          <li><a href="../HTML/assets_showcase.html">Showcase</a></li>
-          <hr style="width: 100%;">
-          <li><a href="https://gofund.me/626b8087">Donate</a></li>
-          <hr style="width: 100%;">
-          <li><a href="#" class="js-open-popup">Contact Me</a></li>
-        </ul>
-        <!-- End of Mobile viewport -->
-    </nav>
-    <!-- End of navigation section -->
-
-    <!-- Contact Me Pop-up -->
-    <div id="contactme-popup-container" class="js-popup">
-      <img src="../Images/contactme_popup_icon.png" alt="#">
-      <p>Contact Me</p>
-      <form action="" class="popup-parent">
-        <label for="name">Name</label>
-        <input id="js-name-input" type="text" placeholder="Please use your real name." maxlength="25" required>
-        <label for="email">Email</label>
-        <input id="js-email-input" type="email" placeholder="you@example.com" required>
-        <textarea id="js-message-input" type="text" placeholder="Your Message" required></textarea>
-      </form>
-      <div class="pop-up-buttons">
-       <button class="js-close-popup">Close</button>
-       <button class="js-send-message-button">Send Message</button>
-      </div>
+  <!-- LIGHT / DARK MODE -->
+  <aside name="light-dark-mode">
+    <p>Modes</p>
+    <div id="light-mode">
+      <div class="js-light-mode-text">Light Mode</div>
     </div>
+    <div id="dark-mode">
+      <div class="js-dark-mode-text">Original Mode</div>
+    </div>
+  </aside>
+  <!-- END OF LIGHT / DARK MODE -->
 
-    <div id="popup-background" class="background"></div>
-    <!-- End of Contact Me Pop-up-->
 
-    <!-- Certificates Section -->
-    <section id="certificates-container">
-      <div class="certificate-parent" name="2d-asset-photoshop">
-        <img src="../Certificates/2d_asset_design_photoshop.png" alt="#">
-        <a href="https://www.udemy.com/certificate/UC-34bcedd9-0b9e-4dd3-b469-14b5e696396f/">
-          <button>Udemy</button>
-        </a>
-      </div>
+  <!-- Navigation section of the webpage -->
+  <nav id="nav-bar">
+    <a href="../index.html" id="logo">
+      <img src="../Images/official_logo.png"
+      style="max-width: 100%; max-height: 100%; border-radius: 100px;"></a>
+    <a href="2dgames.html">
+      <button class="nobg-nav-buttons">2D Games</button></a>
+    <a href="3dgames.html" >
+      <button class="nobg-nav-buttons">3D Games</button></a>
+    <a href="assets_showcase.html">
+      <button class="nobg-nav-buttons">Showcase</button></a>
+    <a href="https://gofund.me/626b8087">
+      <button class="withbg-nav-buttons">Donate</button></a>
+    <a href="#">
+      <button class="withbg-nav-buttons js-open-popup">Contact Me</button></a>
+    
+    <!-- Mobile viewport -->
+    <div id="hidden-buttons-icon" onclick="mobileButtons()">
+    <img src="../Images/hidden_buttons_icon.png" alt="#"
+      style="max-width: 100%; max-height: 100%; margin: auto;">
+    </div>
+    <ul id="buttons-list">
+      <li><a href="../HTML/2dgames.html">2D Games</a></li>
+      <hr style="width: 100%;">
+      <li><a href="../HTML/3dgames.html">3D Games</a></li>
+      <hr style="width: 100%;">
+      <li><a href="../HTML/assets_showcase.html">Showcase</a></li>
+      <hr style="width: 100%;">
+      <li><a href="https://gofund.me/626b8087">Donate</a></li>
+      <hr style="width: 100%;">
+      <li><a href="#" class="js-open-popup">Contact Me</a></li>
+    </ul>
+    <!-- End of Mobile viewport -->
+  </nav>
+  <!-- End of navigation section -->
 
-      <div class="certificate-parent" name="3d-modeling-blender">
-        <img src="../Certificates/blender_3d_modeling.png" alt="#">
-        <a href="https://www.udemy.com/certificate/UC-5e175c43-b42c-4264-ac83-eddaf022feb4/">
-          <button>Udemy</button>
-        </a>
-      </div>
 
-      <div class="certificate-parent" name="unity-vfx-graph-#1">
-        <img src="../Certificates/unity_vfx_graph_1.png" alt="#">
-        <a href="https://www.udemy.com/certificate/UC-d14fcfd6-fd64-41fa-abb3-a7037139282c/">
-          <button>Udemy</button>
-        </a>
-      </div>
+  <!-- Contact Me Pop-up -->
+  <div id="contactme-popup-container" class="js-popup">
+    <img src="../Images/contactme_popup_icon.png" alt="#">
+    <p>Contact Me</p>
+    <form action="" class="popup-parent">
+      <label for="name">Name</label>
+      <input id="js-name-input" type="text" placeholder="Please use your real name." maxlength="25" required>
+      <label for="email">Email</label>
+      <input id="js-email-input" type="email" placeholder="you@example.com" required>
+      <textarea id="js-message-input" type="text" placeholder="Your Message" required></textarea>
+    </form>
+    <div class="pop-up-buttons">
+     <button class="js-close-popup">Close</button>
+     <button class="js-send-message-button">Send Message</button>
+    </div>
+  </div>
+  <div id="popup-background" class="background"></div>
+  <!-- End of Contact Me Pop-up-->
 
-      <div class="certificate-parent" name="unity-vfx-graph-#2">
-        <img src="../Certificates/unity_vfx_graph_2.png" alt="#">
-        <a href="https://www.udemy.com/certificate/UC-7558dd51-3295-4f78-b08c-2aefead99591/">
-          <button>Udemy</button>
-        </a>
-      </div>
+  
+  <!-- Certificates Section -->
+  <section id="certificates-container">
+    <div class="certificate-parent js-block-parent" name="2d-asset-photoshop">
+      <img src="../Certificates/2d_asset_design_photoshop.png" alt="#">
+      <a href="https://www.udemy.com/certificate/UC-34bcedd9-0b9e-4dd3-b469-14b5e696396f/">
+        <button>Udemy</button>
+      </a>
+    </div>
+    <div class="certificate-parent js-block-parent" name="3d-modeling-blender">
+      <img src="../Certificates/blender_3d_modeling.png" alt="#">
+      <a href="https://www.udemy.com/certificate/UC-5e175c43-b42c-4264-ac83-eddaf022feb4/">
+        <button>Udemy</button>
+      </a>
+    </div>
+    <div class="certificate-parent js-block-parent" name="unity-vfx-graph-#1">
+      <img src="../Certificates/unity_vfx_graph_1.png" alt="#">
+      <a href="https://www.udemy.com/certificate/UC-d14fcfd6-fd64-41fa-abb3-a7037139282c/">
+        <button>Udemy</button>
+      </a>
+    </div>
+    <div class="certificate-parent js-block-parent" name="unity-vfx-graph-#2">
+      <img src="../Certificates/unity_vfx_graph_2.png" alt="#">
+      <a href="https://www.udemy.com/certificate/UC-7558dd51-3295-4f78-b08c-2aefead99591/">
+        <button>Udemy</button>
+      </a>
+    </div>
+    <div class="certificate-parent js-block-parent" name="unity-vfx-shuriken">
+      <img src="../Certificates/unity_vfx_shuriken.png" alt="#">
+      <a href="https://www.udemy.com/certificate/UC-a20fdd85-b86c-4560-8ff8-3fcd84759a91/">
+        <button>Udemy</button>
+      </a>
+    </div>
+  </section>
+  <!-- End of Certificates Section -->
 
-      <div class="certificate-parent" name="unity-vfx-shuriken">
-        <img src="../Certificates/unity_vfx_shuriken.png" alt="#">
-        <a href="https://www.udemy.com/certificate/UC-a20fdd85-b86c-4560-8ff8-3fcd84759a91/">
-          <button>Udemy</button>
-        </a>
-      </div>
-    </section>
-    <!-- End of Certificates Section -->
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-columns" name="personal">
-        <div class="footer-titles">Personal</div>
-        <p>
-          <a href="aboutme.html">About Me</a>
-          <a href="#" class="js-open-popup">Contact Me</a>
-          <a href="https://gofund.me/626b8087">Donate<br><br></a>
-        </p>
-      </div>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-columns" name="personal">
+      <div class="footer-titles">Personal</div>
+      <p>
+        <a href="aboutme.html">About Me</a>
+        <a href="#" class="js-open-popup">Contact Me</a>
+        <a href="https://gofund.me/626b8087">Donate<br><br></a>
+      </p>
+    </div>
+    <div class="footer-columns" name="game-related">
+      <div class="footer-titles">
+        Game Related</div>
+        <a href="../HTML/2dgames.html">2D Games</a>
+        <a href="../HTML/3dgames.html">3D Games</a>
+        <a href="../HTML/assets_showcase.html">Showcase</a>
+    </div>
+    <div class="footer-columns" name="social-media">
+      <div class="footer-titles">
+      Social Media</div>
+      <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
+      <a href="https://www.twitch.tv/plgamedev">Twitch</a>
+      <a href="https://www.instagram.com/phillipe.lira/">Instagram<br><br></a>
+      <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
+      <a href="https://twitter.com/lira_phillipe">Twitter</a>
+    </div>
+  </footer>
+  <!-- End of Footer -->
 
-      <div class="footer-columns" name="game-related">
-        <div class="footer-titles">
-          Game Related</div>
-          <a href="../HTML/2dgames.html">2D Games</a>
-          <a href="../HTML/3dgames.html">3D Games</a>
-          <a href="../HTML/assets_showcase.html">Showcase</a>
-      </div>
 
-      <div class="footer-columns" name="social-media">
-        <div class="footer-titles">
-        Social Media</div>
-        <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
-        <a href="https://www.twitch.tv/plgamedev">Twitch</a>
-        <a href="https://www.instagram.com/phillipe.lira/">Instagram<br><br></a>
-        <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
-        <a href="https://twitter.com/lira_phillipe">Twitter</a>
-      </div>
-    </footer>
-    <!-- End of Footer -->
-
-    <script src="../JavaScript/general.js"></script>
+  <script src="../JavaScript/general.js"></script>
 </body>
 </html>

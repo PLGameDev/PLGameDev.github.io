@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../Images/website_savicon.png">
+    <link rel="icon" type="image/png" href="Images/website_savicon.png">
     <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/index_rwd.css">
@@ -12,11 +12,24 @@
     <title>PL-GameDev</title>
   </head>
   <body>
+    <!-- LIGHT / DARK MODE -->
+    <aside name="light-dark-mode">
+      <p>Modes</p>
+      <div id="light-mode">
+        <div class="js-light-mode-text">Light Mode</div>
+      </div>
+      <div id="dark-mode">
+        <div class="js-dark-mode-text">Original Mode</div>
+      </div>
+    </aside>
+    <!-- END OF LIGHT / DARK MODE -->
+
+
     <!-- Navigation section of the webpage -->
     <nav id="nav-bar">
       <a href="index.html" id="logo">
         <img src="Images/official_logo.png"
-        style="max-width: 100%; max-height: 100%; border-radius: 100px;"></a>
+        style="max-width: 100%; max-height: 100%; margin: auto;"></a>
       <a href="HTML/2dgames.html">
         <button class="nobg-nav-buttons">2D Games</button></a>
       <a href="HTML/3dgames.html" >
@@ -49,6 +62,7 @@
     </nav>
     <!-- End of navigation section -->
     
+
     <!-- Contact Me Pop-up -->
     <div id="contactme-popup-container" class="js-popup">
       <img src="Images/contactme_popup_icon.png" alt="#">
@@ -73,7 +87,7 @@
     <!-- Personal info section -->
     <section id="main-section" name="personal-info">
       <div class="personal-info-parent">
-        <div class="job-title">Game Development</div>
+        <div class="job-title js-block-title">Game Development</div>
         <p class="personal-info-text">
           Hi, I'm Phillipe.
           <br><br>
@@ -111,7 +125,7 @@
     
     <!-- News/Journey section -->
     <section id="info-container">
-      <div class="info-parent" name="news-info">
+      <div class="info-parent js-block-parent" name="news-info">
         <div class="info-title">
           <p>News</p>
           <img src="Images/news_icon.png" alt="#">
@@ -132,7 +146,7 @@
         <a href="#"><button>Trailer</button></a>
       </div>
 
-      <div class="info-parent" name="gamedev-journey-info">
+      <div class="info-parent js-block-parent" name="gamedev-journey-info">
         <div class="info-title">
           <p>Game Dev Journey</p>
           <img src="Images/gamedev_icon.png" alt="#">
@@ -192,6 +206,7 @@
     </footer>
     <!-- End of Footer -->
 
+    
     <script src="JavaScript/general.js"></script>
   </body>
 </html>

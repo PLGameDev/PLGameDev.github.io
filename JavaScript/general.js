@@ -1,3 +1,145 @@
+/* -------------------- LIGHT/DARK MODE ------------------------- */
+class LightMode{
+  constructor(){
+    this.icon = document.getElementById("light-mode"); // This is for the click event
+    this.lightIconText = document.querySelector(".js-light-mode-text");
+    this.body = document.querySelector("body");
+    // NAVIGATION BAR
+    this.navBar = document.getElementById("nav-bar");
+    this.navBarButtons = document.querySelectorAll(".nobg-nav-buttons"); // Array
+    this.mobileMenuList = document.getElementById("buttons-list");
+    this.mobileMenuIcon = document.getElementById("hidden-buttons-icon");
+    // MAIN ELEMENTS
+    this.blocksParent = document.querySelectorAll(".js-block-parent"); // Array
+    // FOOTER
+    this.footer = document.getElementById("footer");
+    this.footerTitles = document.querySelectorAll(".footer-titles"); // Array
+    // GAMES & SHOWCASE
+    this.titleBox = document.querySelectorAll(".js-title-box"); // Array
+    this.gamesDescriptionBox = document.querySelectorAll(".js-game-description"); // Array
+  }
+
+  ChangeStyle(){
+    this.body.style = "background: linear-gradient(to right, #edf0f1, white, #edf0f1); color: #16161a;";
+    this.navBar.style = "background-color: white; border-bottom: 0px solid white; box-shadow: 0 0 5px grey";
+    this.mobileMenuList.style = "background: linear-gradient(to right, #00cfff, #005ead);";
+    this.mobileMenuIcon.style = "background: linear-gradient(to bottom, #00cfff, #005ead); border-radius: 200px;"
+    this.footer.style = "background-color: white; box-shadow: 0 0 5px grey";
+
+    // GAMES
+    if(this.titleBox != null & this.gamesDescriptionBox != null){ // THIS WILL STOP CONSOLE ERRORS IN OTHER PAGES
+      this.titleBox.forEach(titleBox => {
+        titleBox.style = "background: linear-gradient(to bottom, #edf0f1, #edf0f1); text-shadow: none; border-top: 1px solid #00cfff; border-bottom: 1px solid #00cfff;";
+      })
+      this.gamesDescriptionBox.forEach(descriptionBox => {
+        descriptionBox.style = "background: linear-gradient(to bottom, white, #edf0f1); border: 1px solid #00cfff;";
+      })
+    }
+
+    this.navBarButtons.forEach(buttons => {
+      buttons.style = "color: #16161a;";
+    });
+
+    this.blocksParent.forEach(blockParent => { // THESE ARE THE MAIN ELEMENT BLOCKS OF ALL PAGES
+      blockParent.style = "background-color: white; box-shadow: 0 0 10px grey;";
+    });
+
+    this.footerTitles.forEach(footerTitles => {
+      footerTitles.style = "color: grey"
+    });
+  }
+}
+
+class DarkMode{
+  constructor(){
+    this.icon = document.getElementById("dark-mode"); // This is for the click event
+    this.darkIconText = document.querySelector(".js-dark-mode-text");
+    this.body = document.querySelector("body");
+    // NAVIGATION BAR
+    this.navBar = document.getElementById("nav-bar");
+    this.navBarButtons = document.querySelectorAll(".nobg-nav-buttons"); // Array
+    this.mobileMenuList = document.getElementById("buttons-list");
+    this.mobileMenuIcon = document.getElementById("hidden-buttons-icon");
+    // MAIN ELEMENTS
+    this.blocksParent = document.querySelectorAll(".js-block-parent"); // Array
+    // FOOTER
+    this.footer = document.getElementById("footer");
+    this.footerTitles = document.querySelectorAll(".footer-titles"); // Array
+    // GAMES & SHOWCASE
+    this.titleBox = document.querySelectorAll(".js-title-box"); // Array
+    this.gamesDescriptionBox = document.querySelectorAll(".js-game-description"); // Array
+  }
+
+  ChangeStyle(){
+    this.body.style = "background: ; color: ;";
+    this.navBar.style = "background-color: ; box-shadow: ;";
+    this.mobileMenuList.style = "background-color: ;";
+    this.mobileMenuIcon.style = "background: ; border-radius: ;"
+    this.footer.style = "background-color: ; box-shadow: ;";
+
+    // GAMES
+    if(this.titleBox != null & this.gamesDescriptionBox != null){ // THIS WILL STOP CONSOLE ERRORS IN OTHER PAGES
+      this.titleBox.forEach(titleBox => {
+        titleBox.style = "background: ; text-shadow: ; border-top: ; border-bottom: ;";
+      })
+      this.gamesDescriptionBox.forEach(descriptionBox => {
+        descriptionBox.style = "background: ; border: ;";
+      })
+    }
+
+    this.navBarButtons.forEach(buttons => {
+      buttons.style = "color: ;";
+    });
+
+    this.blocksParent.forEach(blockParent => { // THESE ARE THE MAIN ELEMENT BLOCKS OF ALL PAGES
+      blockParent.style = "background-color: ; box-shadow: ;";
+    });
+
+    this.footerTitles.forEach(footerTitles => {
+      footerTitles.style = "color: ;";
+    });
+  }
+}
+
+const lightMode = new LightMode();
+const darkMode = new DarkMode();
+
+let LightModeActive = false;
+let DarkModeActive = true;
+
+if(DarkModeActive){
+  darkMode.ChangeStyle();
+}
+else{
+  lightMode.ChangeStyle();
+}
+
+// LIGHT MODE
+lightMode.icon.addEventListener("click", function(event){ // Change style of the page
+  lightMode.ChangeStyle();
+  LightModeActive = true;
+});
+lightMode.icon.addEventListener("mouseover", function(event){ // Enable text
+  lightMode.lightIconText.style = "display: inline-flex;"
+});
+lightMode.icon.addEventListener("mouseout", function(event){ // Disable text
+  lightMode.lightIconText.style = "display: none;"
+});
+
+// DARK MODE
+darkMode.icon.addEventListener("click", function(event){ // Enable text
+  darkMode.ChangeStyle();
+  DarkModeActive = true;
+});
+darkMode.icon.addEventListener("mouseover", function(event){ // Enable text
+  darkMode.darkIconText.style = "display: inline-flex;"
+});
+darkMode.icon.addEventListener("mouseout", function(event){ // Disable text
+  darkMode.darkIconText.style = "display: none;"
+});
+/* -------------------- END OF LIGHT/DARK MODE ------------------------- */
+
+
 /* -------------------- CONTACT ME BUTTON ------------------------- */
 class Modal{
   constructor(){
