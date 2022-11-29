@@ -7,8 +7,8 @@ class LightMode{
     // NAVIGATION BAR
     this.navBar = document.getElementById("nav-bar");
     this.navBarButtons = document.querySelectorAll(".nobg-nav-buttons"); // Array
-    this.mobileMenuList = document.getElementById("buttons-list");
-    this.mobileMenuIcon = document.getElementById("hidden-buttons-icon");
+    this.mobileMenu = document.getElementById("buttons-list");
+    this.mobileMenuText = document.querySelectorAll(".js-mobile-menu-text"); // Array
     // MAIN ELEMENTS
     this.blocksParent = document.querySelectorAll(".js-block-parent"); // Array
     // FOOTER
@@ -21,10 +21,9 @@ class LightMode{
 
   ChangeStyle(){
     this.body.style = "background: linear-gradient(to right, #edf0f1, white, #edf0f1); color: #16161a;";
-    this.navBar.style = "background-color: white; border-bottom: 0px solid white; box-shadow: 0 0 5px grey";
-    this.mobileMenuList.style = "background: linear-gradient(to right, #00cfff, #005ead);";
-    this.mobileMenuIcon.style = "background: linear-gradient(to bottom, #00cfff, #005ead); border-radius: 200px;"
-    this.footer.style = "background-color: white; box-shadow: 0 0 5px grey";
+    this.navBar.style = "background-color: white; border-bottom: 0px solid white; box-shadow: 0 0 5px grey;";
+    this.mobileMenu.style = "background-color: white; box-shadow: 0px 5px 5px grey;";
+    this.footer.style = "background-color: white; box-shadow: 0 0 5px grey;";
 
     // GAMES
     if(this.titleBox != null & this.gamesDescriptionBox != null){ // THIS WILL STOP CONSOLE ERRORS IN OTHER PAGES
@@ -47,6 +46,10 @@ class LightMode{
     this.footerTitles.forEach(footerTitles => {
       footerTitles.style = "color: grey"
     });
+
+    this.mobileMenuText.forEach(menuText => {
+      menuText.style = "color: #16161a;";
+    });
   }
 }
 
@@ -58,8 +61,8 @@ class DarkMode{
     // NAVIGATION BAR
     this.navBar = document.getElementById("nav-bar");
     this.navBarButtons = document.querySelectorAll(".nobg-nav-buttons"); // Array
-    this.mobileMenuList = document.getElementById("buttons-list");
-    this.mobileMenuIcon = document.getElementById("hidden-buttons-icon");
+    this.mobileMenu = document.getElementById("buttons-list");
+    this.mobileMenuText = document.querySelectorAll(".js-mobile-menu-text"); // Array
     // MAIN ELEMENTS
     this.blocksParent = document.querySelectorAll(".js-block-parent"); // Array
     // FOOTER
@@ -73,8 +76,7 @@ class DarkMode{
   ChangeStyle(){
     this.body.style = "background: ; color: ;";
     this.navBar.style = "background-color: ; box-shadow: ;";
-    this.mobileMenuList.style = "background-color: ;";
-    this.mobileMenuIcon.style = "background: ; border-radius: ;"
+    this.mobileMenu.style = "background-color: ; box-shadow: ;";
     this.footer.style = "background-color: ; box-shadow: ;";
 
     // GAMES
@@ -98,13 +100,17 @@ class DarkMode{
     this.footerTitles.forEach(footerTitles => {
       footerTitles.style = "color: ;";
     });
+
+    this.mobileMenuText.forEach(menuText => {
+      menuText.style = "color: ;";
+    });
   }
 }
 
 const lightMode = new LightMode();
 const darkMode = new DarkMode();
 
-let LightModeActive = false;
+let LightModeActive;
 let DarkModeActive = true;
 
 if(DarkModeActive){
@@ -114,28 +120,32 @@ else{
   lightMode.ChangeStyle();
 }
 
-// LIGHT MODE
+// LIGHT MODE BUTTON
 lightMode.icon.addEventListener("click", function(event){ // Change style of the page
   lightMode.ChangeStyle();
+
   LightModeActive = true;
+  DarkModeActive = false;
 });
 lightMode.icon.addEventListener("mouseover", function(event){ // Enable text
-  lightMode.lightIconText.style = "display: inline-flex;"
+  lightMode.lightIconText.style = "visibility: visible";
 });
 lightMode.icon.addEventListener("mouseout", function(event){ // Disable text
-  lightMode.lightIconText.style = "display: none;"
+  lightMode.lightIconText.style = "visibility: hidden";
 });
 
-// DARK MODE
+// DARK MODE BUTTON
 darkMode.icon.addEventListener("click", function(event){ // Enable text
   darkMode.ChangeStyle();
+
   DarkModeActive = true;
+  LightModeActive = false;
 });
 darkMode.icon.addEventListener("mouseover", function(event){ // Enable text
-  darkMode.darkIconText.style = "display: inline-flex;"
+  darkMode.darkIconText.style = "visibility: visible";
 });
 darkMode.icon.addEventListener("mouseout", function(event){ // Disable text
-  darkMode.darkIconText.style = "display: none;"
+  darkMode.darkIconText.style = "visibility: hidden";
 });
 /* -------------------- END OF LIGHT/DARK MODE ------------------------- */
 
@@ -147,11 +157,12 @@ class Modal{
     this.popupBackground = document.getElementById("popup-background");
     this.contactMeButton = document.querySelectorAll(".js-open-popup");
     this.closeButton = document.querySelector(".js-close-popup");
+    this.inputsStyle = document.querySelectorAll(".js-input-style");
   }
 
   openPopup(){
-    this.popup.style = "display: flex";
-    this.popupBackground.style = "display: block; opacity: 90%;";
+    this.CheckStyleMode();
+
     alert("This Pop-Up is still in development. No message will be sent to me. Use the About Me page and copy the email from there.");
   }
   
@@ -159,11 +170,26 @@ class Modal{
     this.popup.style = "display: none";
     this.popupBackground.style = "display: none";
   }
+
+  CheckStyleMode(){
+    this.popupBackground.style = "display: block; opacity: 90%;";
+
+    if(LightModeActive){
+      this.popup.style = "display: flex; background: linear-gradient(to bottom, white, #edf0f1); color: #16161a;";
+
+      this.inputsStyle.forEach(inputStyle => {
+        inputStyle.style = "background-color: #16161a;";
+      });
+    }
+    else{
+      this.popup.style = "display: flex; background: ; color: ;";
+    }
+  }
 }
 
 const modal = new Modal();
 
-for(var i = 0; i < modal.contactMeButton.length; i++){
+for(var i = 0; i < modal.contactMeButton.length; i++){ // Add click function for every -contact me- button found
   modal.contactMeButton[i].addEventListener('click', function(){
     modal.openPopup();
   })
@@ -174,19 +200,6 @@ modal.closeButton.addEventListener("click", function(event){
 });
 /* -------------------- END OF CONTACT ME BUTTON ------------------------- */
 
-
-/* -------------------- MOBILE MENU BUTTON ------------------------- */
-function mobileButtons(){
-  var buttons = document.getElementById("buttons-list");
-  
-  if(buttons.style.display == "flex"){
-    buttons.style="display: none;";
-  }
-  else{
-    buttons.style="display: flex;";
-  }
-}
-/* -------------------- END OF MOBILE MENU BUTTON ------------------------- */
 
 /* -------------------- SAVE CONTACT DATA  ------------------------- */
 class InputSaver{
@@ -210,6 +223,24 @@ sendMessageButton.addEventListener("click", function(event){
   modal.closePopup();
 });
 /* -------------------- END OF SAVE CONTACT DATA  ------------------------- */
+
+
+/* -------------------- MOBILE MENU BUTTON ------------------------- */
+let mobileMenu = document.getElementById("buttons-list");
+
+function mobileButtons(){
+  if(mobileMenu.style.visibility === "hidden" & LightModeActive){
+    mobileMenu.style = "visibility: visible; background-color: white; box-shadow: 0px 5px 5px grey;";
+  }
+  else if(mobileMenu.style.visibility === "hidden" & DarkModeActive){
+    mobileMenu.style = "visibility: visible; background-color: #16161a; box-shadow: 0px 0px 10px #16161a;";
+  }
+  else{
+    mobileMenu.style = "visibility: hidden;";
+  }
+}
+/* -------------------- END OF MOBILE MENU BUTTON ------------------------- */
+
 
 /* -------------------- ANIMATED JOB TITLE ------------------------- */
 const title = document.querySelector(".job-title"); // Get the title node

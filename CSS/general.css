@@ -67,23 +67,24 @@ aside p{
   border: 200px;
   margin: 10px auto;
   background-color: white;
-  border: 1px solid #414246;
+  border: 2px solid #414246;
   border-radius: 100px;
 }
 
 #light-mode div{
-  display: none;
+  visibility: hidden;
+  display: inline-flex;
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(25%, -50%);
-  width: 100px;
+  transform: translate(60%, -50%);
+  width: 50px;
   font-size: small;
 }
 
 #light-mode:hover{
   cursor: pointer;
-  border: 1px solid #00cfff;
+  border: 2px solid #00cfff;
   box-shadow: 0 0 10px #005ead;
 }
 
@@ -93,23 +94,24 @@ aside p{
   border: 200px;
   margin: 10px auto;
   background-color: #24252A;
-  border: 1px solid #16161a;
+  border: 2px solid #16161a;
   border-radius: 100px;
 }
 
 #dark-mode div{
-  display: none;
+  visibility: hidden;
+  display: inline-flex;
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(25%, -50%);
-  width: 100px;
+  transform: translate(60%, -50%);
+  width: 50px;
   font-size: small;
 }
 
 #dark-mode:hover{
   cursor: pointer;
-  border: 1px solid #00cfff;
+  border: 2px solid #00cfff;
   box-shadow: 0 0 10px #005ead;
 }
 /* ------------------------- END OF LIGHT/DARK MODES ----------------------- */
@@ -130,7 +132,7 @@ aside p{
   background-color: #16161a;
   z-index: 100;
 }
-  
+
 #logo{
   display: inline-block;
   position: absolute;
@@ -177,7 +179,7 @@ button:hover{
   display: none;
   width: 50px;
   height: 50px;
-  margin: auto 5px;
+  margin: auto 0;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 50px;
@@ -185,12 +187,14 @@ button:hover{
 
 #hidden-buttons-icon:hover{
   cursor: pointer;
-  border: 2px solid #edf0f1;
-  border-radius: 50px;
+  border: 2px solid #00b3ff;
+  box-shadow: 0 0 20px #005ead;
+  border-radius: 100px;
 }
   
 #buttons-list{
-  display: none;
+  visibility: hidden;
+  display: flex;
   flex-direction: column;
   position: absolute;
   top: 80px;

@@ -39,10 +39,6 @@
 }
 
 @media(max-width: 962px){
-    .popup-parent textarea{
-        height: 100%;
-    }
-
     #contactme-popup-container p{
         font-size: small;
     }
@@ -61,7 +57,9 @@
 }
 
 @media(max-width: 810px){
-    
+    .popup-parent textarea{
+        height: 100px;
+    }
 }
 
 @media(max-width: 768px){
@@ -91,7 +89,7 @@
 }
 
 @media(max-width: 601px){
-
+    
 }
 
 @media(max-width: 540px){

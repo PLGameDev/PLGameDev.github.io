@@ -1,5 +1,22 @@
 @media(max-width: 2560px){
-    
+    aside{
+        flex-direction: row;
+        align-items: center;
+        top: 100px;
+        text-align: center;
+    }
+
+    #mode-icons{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    #dark-mode{
+        position: relative;
+        left: 65px;
+        z-index: 1;
+    }
 }
 
 @media(max-width: 1920px){
