@@ -1,0 +1,135 @@
+@media(max-width: 2560px){
+    
+}
+
+@media(max-width: 1920px){
+    
+}
+
+@media(max-width: 1600px){
+    
+}
+
+@media(max-width: 1440px){
+    #contactme-popup-container p{
+        bottom: 35px;
+    }
+
+    #contactme-popup-container img{
+        bottom: 55px;
+    }
+}
+
+@media(max-width: 1280px){
+    #contactme-popup-container{
+        width: 60%;
+    }
+
+    .popup-parent textarea{
+        height: 150px;
+    }
+}
+
+@media(max-width: 1080px){    
+    
+}
+
+@media(max-width: 1024px){
+    
+}
+
+@media(max-width: 962px){
+    #nav-bar button{
+        display: none;
+    }
+      
+    #mobile-menu-icon{
+        display: inline-flex;
+    }
+
+    #contactme-popup-container p{
+        font-size: small;
+    }
+
+    .popup-parent label{
+        font-size: small;
+    }
+
+    #contactme-popup-container p{
+        bottom: 25px;
+    }
+
+    #contactme-popup-container img{
+        bottom: 45px;
+    }
+
+    #footer{
+        flex-wrap: wrap;
+        order: 4;
+    }
+
+  .footer-columns{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 810px){
+    .popup-parent textarea{
+        height: 100px;
+    }
+}
+
+@media(max-width: 768px){
+    #contactme-popup-container p{
+        bottom: 15px;
+    }
+
+    #contactme-popup-container img{
+        bottom: 30px;
+    }
+}
+
+@media(max-width: 720px){
+    
+}
+
+@media(max-width: 640px){
+    .pop-up-buttons button{
+        width: 100px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    #contactme-popup-container{
+        width: 70%;
+    }
+}
+
+@media(max-width: 601px){
+    
+}
+
+@media(max-width: 540px){
+    
+}
+
+@media(max-width: 425px){
+    #contactme-popup-container{
+        width: 80%;
+    }
+
+    #contactme-popup-container img{
+        max-width: 20%;
+        max-height: 20%;
+    }
+}
+
+@media(max-width: 375px){
+    
+}
+
+@media(max-width: 320px){
+    .pop-up-buttons button{
+        margin: 10px;
+    }
+}

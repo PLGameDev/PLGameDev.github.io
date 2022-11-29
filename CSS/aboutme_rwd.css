@@ -36,21 +36,7 @@
 }
 
 @media(max-width: 962px){
-    #nav-bar button{
-        display: none;
-    }
 
-    #hidden-buttons-icon{
-        display: inline-flex;
-    }
-
-    #footer{
-        flex-wrap: wrap;
-    }
-
-    .footer-columns{
-        flex-basis: 100%;
-    }
 }
 
 @media(max-width: 810px){

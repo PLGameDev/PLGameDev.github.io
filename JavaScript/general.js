@@ -7,7 +7,7 @@ class LightMode{
     // NAVIGATION BAR
     this.navBar = document.getElementById("nav-bar");
     this.navBarButtons = document.querySelectorAll(".nobg-nav-buttons"); // Array
-    this.mobileMenu = document.getElementById("buttons-list");
+    this.mobileMenu = document.getElementById("mobile-buttons-list");
     this.mobileMenuText = document.querySelectorAll(".js-mobile-menu-text"); // Array
     // MAIN ELEMENTS
     this.blocksParent = document.querySelectorAll(".js-block-parent"); // Array
@@ -61,7 +61,7 @@ class DarkMode{
     // NAVIGATION BAR
     this.navBar = document.getElementById("nav-bar");
     this.navBarButtons = document.querySelectorAll(".nobg-nav-buttons"); // Array
-    this.mobileMenu = document.getElementById("buttons-list");
+    this.mobileMenu = document.getElementById("mobile-buttons-list");
     this.mobileMenuText = document.querySelectorAll(".js-mobile-menu-text"); // Array
     // MAIN ELEMENTS
     this.blocksParent = document.querySelectorAll(".js-block-parent"); // Array
@@ -226,9 +226,9 @@ sendMessageButton.addEventListener("click", function(event){
 
 
 /* -------------------- MOBILE MENU BUTTON ------------------------- */
-let mobileMenu = document.getElementById("buttons-list");
+function MobileMenuList(){
+  let mobileMenu = document.getElementById("mobile-buttons-list");
 
-function mobileButtons(){
   if(mobileMenu.style.visibility === "hidden" & LightModeActive){
     mobileMenu.style = "visibility: visible; background-color: white; box-shadow: 0px 5px 5px grey;";
   }

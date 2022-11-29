@@ -22,15 +22,19 @@
         margin-top: 50px;
     }
 }
+
 @media(max-width: 1920px){
     
 }
+
 @media(max-width: 1600px){
     
 }
+
 @media(max-width: 1440px){
     
 }
+
 @media(max-width: 1280px){
     .content-parent{
         flex-wrap: wrap;
@@ -47,44 +51,39 @@
         padding: 10px;
     }
 }
+
 @media(max-width: 1080px){
     
 }
+
 @media(max-width: 1024px){
     
 }
+
 @media(max-width: 962px){
-    #nav-bar button{
-        display: none;
-    }
-
-    #hidden-buttons-icon{
-        display: inline-flex;
-    }
     
-    #footer{
-        flex-wrap: wrap;
-    }
-
-    .footer-columns{
-        flex-basis: 100%;
-    }
 }
+
 @media(max-width: 810px){
     
 }
+
 @media(max-width: 768px){
     
 }
+
 @media(max-width: 720px){
     
 }
+
 @media(max-width: 640px){
     
 }
+
 @media(max-width: 601px){
     
 }
+
 @media(max-width: 540px){
     .buttons-to-other-pages{
         flex-direction: column;
@@ -95,14 +94,17 @@
         margin: 15px 0;
     }
 }
+
 @media(max-width: 425px){
     .section-description{
         padding: 5px;
     }
 }
+
 @media(max-width: 375px){
     
 }
+
 @media(max-width: 320px){
     
 }

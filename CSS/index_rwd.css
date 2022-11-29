@@ -38,14 +38,6 @@
 }
 
 @media(max-width: 962px){
-    #nav-bar button{
-        display: none;
-    }
-      
-    #hidden-buttons-icon{
-        display: inline-flex;
-    }
-      
     #main-section{
         flex-wrap: wrap;
         flex-grow: 1;
@@ -75,15 +67,6 @@
     .info-parent{
         flex-basis: 80%;
         margin: 50px auto;
-    }
-  
-    #footer{
-          flex-wrap: wrap;
-          order: 4;
-    }
-  
-    .footer-columns{
-          flex-basis: 100%;
     }
 }
 

@@ -71,28 +71,12 @@
 }
 
 @media(max-width: 962px){
-    #nav-bar button{
-        display: none;
-    }
-
-    #hidden-buttons-icon{
-        display: inline-flex;
-    }
-
     .section-parent{
         flex-basis: 90%;
     }
 
     .game-picture{
         height: 475px;
-    }
-
-    #footer{
-        flex-wrap: wrap;
-    }
-
-    .footer-columns{
-        flex-basis: 100%;
     }
 
     #buttons-parent{

@@ -44,23 +44,7 @@
 }
 
 @media(max-width: 962px){
-    #nav-bar button{
-        display: none;
-    }
-
-    #hidden-buttons-icon{
-        display: inline-flex;
-    }
-
     .certificate-parent{
-        flex-basis: 100%;
-    }
-
-    #footer{
-        flex-wrap: wrap;
-    }
-
-    .footer-columns{
         flex-basis: 100%;
     }
 }
