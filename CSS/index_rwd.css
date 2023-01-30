@@ -119,12 +119,6 @@
     .personal-info-buttons{
         flex-wrap: wrap;
     }
-}
-
-@media(max-width: 375px){
-    .personal-info-text{
-        flex-basis: 100%;
-    }
 
     .personal-info-buttons a{
         flex-basis: 100%;
@@ -132,7 +126,13 @@
     }
 
     .social-media{
-        margin-top: 30px;
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 375px){
+    .personal-info-text{
+        flex-basis: 100%;
     }
 }
 
