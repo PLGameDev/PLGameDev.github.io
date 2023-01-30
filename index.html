@@ -12,208 +12,137 @@
     <title>PL-GameDev</title>
   </head>
   <body>
-    <!-- LIGHT / DARK MODE -->
-    <aside name="light-dark-mode">
-      <p>Modes</p>
-      <div id="mode-icons">
-        <div id="light-mode">
-          <div class="js-light-mode-text">Light</div>
-        </div>
-        <div id="dark-mode">
-          <div class="js-dark-mode-text">Original</div>
-        </div>
-      </div>
-    </aside>
-    <!-- END OF LIGHT / DARK MODE -->
-
-
-    <!-- Navigation section of the webpage -->
+    <!-- NAV BAR -->
     <nav id="nav-bar">
       <a href="index.html" id="logo">
-        <img src="Images/official_logo.png"
-        style="max-width: 100%; max-height: 100%; margin: auto;"></a>
-      <a href="HTML/2dgames.html">
-        <button class="nobg-nav-buttons">2D Games</button></a>
-      <a href="HTML/3dgames.html" >
-        <button class="nobg-nav-buttons">3D Games</button></a>
-      <a href="HTML/assets_showcase.html">
-        <button class="nobg-nav-buttons">Showcase</button></a>
-      <a href="https://gofund.me/626b8087">
-        <button class="withbg-nav-buttons">Donate</button></a>
-      <a href="#">
-        <button class="withbg-nav-buttons js-open-popup">Contact Me</button></a>
-      
-      <!-- Mobile viewport -->
-      <div id="mobile-menu-icon" onclick="MobileMenuList()">
-        <img src="Images/hidden_buttons_icon.png" alt="#"
-          style="max-width: 100%; max-height: 100%; margin: auto;">
-      </div>
-      
-      <ul id="mobile-buttons-list">
-        <li><a href="HTML/2dgames.html" class="js-mobile-menu-text">
-          2D Games</a></li>
-        <hr style="width: 100%;">
-        <li><a href="HTML/3dgames.html" class="js-mobile-menu-text">
-          3D Games</a></li>
-        <hr style="width: 100%;">
-        <li><a href="HTML/assets_showcase.html" class="js-mobile-menu-text">
-          Showcase</a></li>
-        <hr style="width: 100%;">
-        <li><a href="https://gofund.me/626b8087" class="js-mobile-menu-text">
-          Donate</a></li>
-        <hr style="width: 100%;">
-        <li><a href="#" class="js-open-popup js-mobile-menu-text">
-          Contact Me</a></li>
-      </ul>
-      <!-- End of Mobile viewport -->
+        <img src="Images/official_logo.png" alt="#">
+      </a>
+      <button id="js-nav-button" style="background: none; border-radius: 50px;">
+        <img src="Images/hidden_buttons_icon.png" alt="#">
+      </button>
     </nav>
-    <!-- End of navigation section -->
-    
 
-    <!-- Contact Me Pop-up -->
-    <div id="contactme-popup-container" class="js-popup">
-      <img src="Images/contactme_popup_icon.png" alt="#">
-      <p>Contact Me</p>
-      <form action="" class="popup-parent">
-        <label for="name">Name</label>
-        <input id="js-name-input" type="text" placeholder="Please use your real name." maxlength="25" required>
-        <label for="email">Email</label>
-        <input id="js-email-input" type="email" placeholder="you@example.com" required>
-        <textarea id="js-message-input" type="text" placeholder="Your Message" required></textarea>
-      </form>
-      <div class="pop-up-buttons">
-       <button class="js-close-popup">Close</button>
-       <button class="js-send-message-button">Send Message</button>
-      </div>
+    <!-- HIDDEN NAV BUTTONS -->
+    <div id="hidden-nav-buttons">
+      <a href="Documents/Resume.pdf"><button>Resume/CV</button></a>
+      <a href="HTML/certificates.html"><button>Certificates</button></a>
     </div>
 
-    <div id="popup-background" class="background"></div>
+    <!-- Contact Me Pop-up -->
+    <div id="contactme-popup-container">
+      <img src="Images/contactme_popup_icon.png" alt="#">
+      <h2>Personal Info</h2>
+      <div id="popup-info-parent">
+        <div class="popup-titles">
+          <h4>Name:</h4>
+          <h4>Age:</h4>
+          <h4>Occupation:</h4>
+          <h4>Location:</h4>
+          <h4>Languages:</h4>
+          <h4>Email:</h4>
+        </div>
+        <div class="popup-text">
+          <h4>Phillipe Lira</h4>
+          <h4>27 years</h4>
+          <h4>Student</h4>
+          <h4>Germany</h4>
+          <h4>Eng, Por, Ger, Fre</h4>
+          <h4>phillipe-lira@hotmail.com</h4>
+        </div>
+      </div>
+      <button class="js-popup-buttons">Close</button>
+    </div>
+
+    <div id="popup-background"></div>
     <!-- End of Contact Me Pop-up-->
 
+    <!-- MAIN SECTION -->
+    <main id="main-body-container">
+      <!-- PERSONAL INFO -->
+      <section id="personal-info-section">
+        <div class="personal-info-text">
+          <h1>Indie Game Developer</h1>
+          <p>
+            Hi, I'm Phillipe Lira.<br>
+            <br>
+            I have 1+ years of experience in game development.
+            So far I have created four indie games in Unity and this personal
+            website.<br>
 
-    <!-- Personal info section -->
-    <section id="main-section" name="personal-info">
-      <div class="personal-info-parent">
-        <div class="job-title js-block-title">Game Development</div>
-        <p class="personal-info-text">
-          Hi, I'm Phillipe.
-          <br><br>
-          I'm a 27-year-old student living in Germany.
-          During my free time, I love to create video games.
-          Games have always been a big passion of mine and now I seek
-          to do it professionally.
-        
-          <a href="HTML/aboutme.html">
-            <button>About Me</button>
-          </a>
-        </p>
-
-        <div class="social-media">
-          <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">
-            <img src="Images/youtube_icon.png" alt="#"></a>
-          <a href="https://www.twitch.tv/plgamedev">
-            <img src="Images/twitch_icon.png" alt="#"></a>
-          <a href="https://www.instagram.com/phillipe.lira/">
-            <img src="Images/instagram_icon.png" alt="#"></a>
-          <a href="https://www.facebook.com/phillipe.lira">
-            <img src="Images/facebook_icon.png" alt="#"></a>
-          <a href="https://twitter.com/lira_phillipe">
-            <img src="Images/twitter_icon.png" alt="#"></a>
+            Creating games is a big passion of mine, and soon I hope to be able
+            to do it professionally.
+          </p>
+          <div class="personal-info-buttons">
+            <button class="js-popup-buttons">Contact Me</button>
+            <a href="https://gofund.me/626b8087"><button>Donate</button></a>
+          </div>
+          <!-- SOCIAL MEDIA -->
+          <div class="social-media">
+            <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">
+              <img src="../PL GameDev (New)/Images/youtube_icon.png" alt="#"></a>
+            <a href="https://www.instagram.com/phillipe.lira/">
+              <img src="../PL GameDev (New)/Images/instagram_icon.png" alt="#"></a>
+            <a href="https://twitter.com/lira_phillipe">
+              <img src="../PL GameDev (New)/Images/twitter_icon.png" alt="#"></a>
+            <a href="https://www.facebook.com/phillipe.lira">
+              <img src="../PL GameDev (New)/Images/facebook_icon.png" alt="#"></a>
+            <a href="https://www.twitch.tv/plgamedev">
+              <img src="../PL GameDev (New)/Images/twitch_icon.png" alt="#"></a>
+          </div>
         </div>
-      </div>
-
-      <picture class="myphoto">
-        <img src="Images/photo.png" alt="#">
-      </picture>
-      <!-- End of personal info section -->
-    </section>
-    <!-- End of Personal info section -->
-
-    
-    <!-- News/Journey section -->
-    <section id="info-container">
-      <div class="info-parent js-block-parent" name="news-info">
-        <div class="info-title">
-          <p>News</p>
-          <img src="Images/news_icon.png" alt="#">
+        <div id="myphoto">
+          <img src="../PL GameDev (New)/Images/photo.png" alt="#">
         </div>
-        <p class="info-message">
-          Hello there!
-          <br><br>
-          I'm currently working on my new game "The Forbidden Curse".
-          <br><br>
-          It is an action/fantasy 3D game about a mysterious curse
-          that has infected the village you live in.
-          <br><br>
-          If this sounds interesting and you want to see more, visit the 
-          <a href="HTML/assets_showcase.html"
-          style="text-decoration: none; color: #00bbff">showcase</a>
-          page or click on the button below to see the trailer.
-        </p>
-        <a href="#"><button>Trailer</button></a>
-      </div>
+      </section>
 
-      <div class="info-parent js-block-parent" name="gamedev-journey-info">
-        <div class="info-title">
-          <p>Game Dev Journey</p>
-          <img src="Images/gamedev_icon.png" alt="#">
+      <!-- GAMES -->
+      <section id="games-section">
+        <div>
+          <img src="Images/2d_games_icon.png" alt="#"
+          style="max-width: 100%; max-height: 100%; margin: auto;">
+          <a href="HTML/2dgames.html"><button>2D Games</button></a>
         </div>
-        <p class="info-message">
-          The beginning...
-          <br><br>
-          It all started in 2021 when I decided to follow my passion for video
-          games but this time, I wanted to create them instead of just playing.
-          <br><br>
-          In one year of learning game development, I have developed and published
-          four indie games, three 
-          <a href="HTML/2dgames.html"
-          style="text-decoration: none; color: #00bbff">2D games</a>
-          and one 
-          <a href="HTML/3dgames.html"
-          style="text-decoration: none; color: #00bbff">3D game</a>
-          .
-          <br><br>
-          Take a look at my creations!
-        </p>
-        <a href="HTML/assets_showcase.html">
-          <button>Showcase</button></a>
-      </div>
-    </section>
-    <!-- End of News/Journey section -->
+        <div>
+          <img src="Images/3d_games_icon.png" alt="#"
+          style="max-width: 100%; max-height: 100%; margin: auto;">
+          <a href="HTML/3dgames.html"><button>3D Games</button></a>
+        </div>
+        <div id="news-block">
+          <img src="Images/gamedev_icon.png" alt="#"
+          style="max-width: 100%; max-height: 100%; margin: auto;">
+          <a href="HTML/assets_showcase.html"><button>Showcase</button></a>
+        </div>
+      </section>
+    </main>
 
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-columns" name="personal">
-        <div class="footer-titles">Personal</div>
-        <p>
-          <a href="HTML/aboutme.html">About Me</a>
-          <a href="#" class="js-open-popup">Contact Me</a>
-          <a href="https://gofund.me/626b8087">Donate<br><br></a>
-        </p>
-      </div>
-
-      <div class="footer-columns" name="game-related">
-        <div class="footer-titles">
-          Game Related</div>
+    <!-- FOOTER -->
+    <footer id="footer-container">
+      <!-- ELEMENT 1 -->
+      <section class="footer-column" name="social-media">
+        <div class="footer-titles">Social Media</div>
+        <div>
+          <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
+          <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
+          <a href="https://twitter.com/lira_phillipe">Twitter</a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/phillipe.lira/">Instagram</a>
+          <a href="https://www.twitch.tv/plgamedev">Twitch</a>
+        </div>
+      </section>
+      <!-- ELEMENT 1 -->
+      <section class="footer-column" name="dev-journey">
+        <div class="footer-titles">Development Journey</div>
+        <div>
           <a href="HTML/2dgames.html">2D Games</a>
           <a href="HTML/3dgames.html">3D Games</a>
+        </div>
+        <div>
           <a href="HTML/assets_showcase.html">Showcase</a>
-      </div>
-
-      <div class="footer-columns" name="social-media">
-        <div class="footer-titles">
-        Social Media</div>
-        <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
-        <a href="https://www.twitch.tv/plgamedev">Twitch</a>
-        <a href="https://www.instagram.com/phillipe.lira/">Instagram<br><br></a>
-        <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
-        <a href="https://twitter.com/lira_phillipe">Twitter</a>
-      </div>
+        </div>
+      </section>
     </footer>
-    <!-- End of Footer -->
 
-    
     <script src="JavaScript/general.js"></script>
   </body>
 </html>
