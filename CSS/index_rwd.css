@@ -7,9 +7,7 @@
 }
 
 @media(max-width: 1600px){
-    .personal-info-parent{
-      margin-left: 10%;
-    }
+    
 }
 
 @media(max-width: 1440px){
@@ -17,19 +15,23 @@
 }
 
 @media(max-width: 1280px){
-    .job-title{
-      font-size: 35px;
+    #personal-info-section{
+        width: 70%;
     }
 }
 
 @media(max-width: 1080px){    
-    .personal-info-parent{
-      flex-basis: 25%;
+    #personal-info-section{
+        width: 75%;
     }
 
     .personal-info-text{
-      margin: 50px 0;
-      font-size: medium;
+        flex-basis: 40%;
+        margin: auto 20px auto 0;
+    }
+
+    #myphoto{
+        flex-basis: 50%;
     }
 }
 
@@ -38,40 +40,30 @@
 }
 
 @media(max-width: 962px){
-    #main-section{
+    #personal-info-section{
         flex-wrap: wrap;
-        flex-grow: 1;
-        flex-shrink: 1;
-        height: 100%;
     }
-  
-    .myphoto{
+
+    #myphoto{
+        flex-basis: 60%;
+        order: 0;
+    }
+
+    .personal-info-text{
         flex-basis: 80%;
-        flex-shrink: 1;
         order: 1;
-        margin: 0 0 0 50px;
-    }
-  
-    .personal-info-parent{
-        flex-basis: 50%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        order: 2;
-        margin: 0 5%;
-    }
-  
-    #info-container{
-        flex-wrap: wrap;
-    }
-  
-    .info-parent{
-        flex-basis: 80%;
-        margin: 50px auto;
     }
 }
 
 @media(max-width: 810px){
-    
+    #games-section div{
+        margin: 30px 20px;
+    }
+
+    #myphoto{
+        flex-basis: 65%;
+        order: 0;
+    }
 }
 
 @media(max-width: 768px){
@@ -83,47 +75,73 @@
 }
 
 @media(max-width: 640px){
-    
+    #games-section{
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #myphoto{
+        flex-basis: 67.5%;
+        order: 0;
+    }
 }
 
 @media(max-width: 601px){
-    .job-title{
-        font-size: 25px;
-    }
-
-    .custom-letters{
-        font-size: 40px;
-    }
-
-    .personal-info-parent{
-        margin: 0 10%;
-    }
-
-    .info-parent{
-        margin: 50px 5%;
-    }
-}
-
-@media(max-width: 540px){
     
 }
 
+@media(max-width: 540px){
+    #myphoto{
+        flex-basis: 70%;
+        order: 0;
+    }
+}
+
 @media(max-width: 425px){
-    .myphoto{
-        margin: 0 0 0 30px;
+    #personal-info-section{
+        padding: 30px;
+        width: 80%;
+    }
+
+    .personal-info-text{
+        flex-basis: 100%;
+    }
+
+    #myphoto{
+        flex-basis: 95%;
+        order: 0;
+    }
+
+    #games-section{
+        width: 70%;
+    }
+
+    .personal-info-buttons{
+        flex-wrap: wrap;
     }
 }
 
 @media(max-width: 375px){
-    
+    .personal-info-text{
+        flex-basis: 100%;
+    }
+
+    .personal-info-buttons a{
+        flex-basis: 100%;
+        margin: 20px auto;
+    }
+
+    .social-media{
+        margin-top: 30px;
+    }
 }
 
 @media(max-width: 320px){
-    .job-title{
-        font-size: 20px;
+    .personal-info-text h1{
+        font-size: large;
     }
 
-    .custom-letters{
-        font-size: 35px;
+    #games-section{
+        width: 80%;
     }
 }

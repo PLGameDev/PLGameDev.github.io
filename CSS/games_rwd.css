@@ -1,22 +1,5 @@
 @media(max-width: 2560px){
-    aside{
-        flex-direction: row;
-        align-items: center;
-        top: 100px;
-        text-align: center;
-    }
-
-    #mode-icons{
-        display: flex;
-        flex-direction: row;
-        margin: 20px;
-    }
-
-    #dark-mode{
-        position: relative;
-        left: 65px;
-        z-index: 1;
-    }
+    
 }
 
 @media(max-width: 1920px){
@@ -24,8 +7,15 @@
 }
 
 @media(max-width: 1600px){
-    .description-title{
-        font-size: small;
+    #section-container{
+        flex-direction: column;
+        width: 55%;
+    }
+
+    .game-description div{
+        margin: 30px 20px;
+        flex-basis: 30%;
+        padding: 30px;
     }
 }
 
@@ -34,35 +24,19 @@
 }
 
 @media(max-width: 1280px){
-    #game-description-container{
-        margin: auto 0 40px 0;
-    }
+    
 }
 
-@media(max-width: 1080px){    
-    #game-description-container{
-        flex-wrap: wrap;
-    }
-
-    .game-picture{
-        height: 425px;
-    }
-
-    .description-title{
+@media(max-width: 1080px){
+    .game-description{
         width: 100%;
+        margin: auto;
     }
 
-    .description-text{
-        width: 100%;
-    }
-
-    .game-description-parent img{
-        max-width: 10%;
-        max-height: 10%;
-    }
-
-    .description-title{
-        font-size: medium;
+    .game-description div{
+        margin: 30px 10px;
+        flex-basis: 30%;
+        padding: 20px;
     }
 }
 
@@ -71,96 +45,93 @@
 }
 
 @media(max-width: 962px){
-    .section-parent{
-        flex-basis: 90%;
-    }
-
-    .game-picture{
-        height: 475px;
-    }
-
-    #buttons-parent{
-        flex-direction: column;
-    }
-
-    .buttons{
-        margin: 15px 0;
+    #section-container{
+        width: 60%;
     }
 }
 
 @media(max-width: 810px){
-    .game-picture{
-        height: 425px;
+    #section-container{
+        width: 70%;
+    }
+
+    .game-description{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .game-description div{
+        display: flex;
+        flex-direction: row;
+        margin: 30px auto 10px auto;
+    }
+
+    .game-description h5{
+        margin: 20px;
+    }
+
+    .game-description h6{
+        font-size: small;
+        margin: auto;
+    }
+
+    .game-description img{
+        max-width: 20%;
+        max-height: 20%;
+        margin: 5px;
     }
 }
 
 @media(max-width: 768px){
-    .game-picture{
-        height: 400px;
-    }
-
-    .game-description-parent img{
-        max-width: 15%;
-        max-height: 15%;
-    } 
+    
 }
 
 @media(max-width: 720px){
-    .game-picture{
-        height: 375px;
+    #section-container{
+        width: 80%;
     }
 }
 
 @media(max-width: 640px){
-    .game-picture{
-        height: 325px;
-    }
+    
 }
 
 @media(max-width: 601px){
-    .game-picture{
-        height: 300px;
-    }
+    
 }
 
 @media(max-width: 540px){
-    .game-description-parent{
-        padding: 10px 20px;
-    }
-
-    .game-picture{
-        height: 275px;
-    }
+    
 }
 
 @media(max-width: 425px){
-    #buttons-parent{
-        flex-wrap: wrap;
+    .game-description div{
+        flex-direction: column;
+        width: 90%;
+        margin: 15px 0 5px 0;
     }
-    
-    .game-picture{
-        height: 215px;
+
+    .game-description img{
+        display: none;
+    }
+
+    .game-description h5{
+        margin: 0 0 20px 0;
+    }
+
+    .game-description h6{
+        margin-bottom: 10px;
     }
 }
 
 @media(max-width: 375px){
-    .buttons{
-        flex-basis: 50%;
-        margin: 10px auto;
-    }
-    
-    .game-picture{
-        height: 175px;
+    .game-description div{
+        width: 85%;
+        margin: 15px 0;
     }
 }
 
 @media(max-width: 320px){
-    .buttons{
-        flex-basis: 65%;
-        margin: 10px auto;
-    }
     
-    .game-picture{
-        height: 165px;
-    }
 }

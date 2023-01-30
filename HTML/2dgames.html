@@ -12,342 +12,138 @@
     <title>PL-GameDev - 2D Games</title>
   </head>
   <body>
-    <!-- LIGHT / DARK MODE -->
-    <aside name="light-dark-mode">
-      <p>Modes</p>
-      <div id="mode-icons">
-        <div id="light-mode">
-          <div class="js-light-mode-text">Light</div>
-        </div>
-        <div id="dark-mode">
-          <div class="js-dark-mode-text">Original</div>
-        </div>
-      </div>
-    </aside>
-    <!-- END OF LIGHT / DARK MODE -->
-
-    
-    <!-- Navigation section of the webpage -->
+    <!-- NAV BAR -->
     <nav id="nav-bar">
       <a href="../index.html" id="logo">
-        <img src="../Images/official_logo.png"
-        style="max-width: 100%; max-height: 100%; border-radius: 100px;"></a>
-      <a href="../index.html">
-        <button class="nobg-nav-buttons">Homepage</button></a>
-      <a href="3dgames.html" >
-        <button class="nobg-nav-buttons">3D Games</button></a>
-      <a href="assets_showcase.html">
-        <button class="nobg-nav-buttons">Showcase</button></a>
-      <a href="https://gofund.me/626b8087">
-        <button class="withbg-nav-buttons">Donate</button></a>
-      <a href="#">
-        <button class="withbg-nav-buttons js-open-popup">Contact Me</button></a>
-      
-      <!-- Mobile viewport -->
-      <div id="mobile-menu-icon" onclick="MobileMenuList()">
-        <img src="../Images/hidden_buttons_icon.png" alt="#"
-          style="max-width: 100%; max-height: 100%; margin: auto;">
-      </div>
-      
-      <ul id="mobile-buttons-list">
-        <li><a href="../index.html" class="js-mobile-menu-text">
-          Homepage</a></li>
-        <hr style="width: 100%;">
-        <li><a href="3dgames.html" class="js-mobile-menu-text">
-          3D Games</a></li>
-        <hr style="width: 100%;">
-        <li><a href="assets_showcase.html" class="js-mobile-menu-text">
-          Showcase</a></li>
-        <hr style="width: 100%;">
-        <li><a href="https://gofund.me/626b8087" class="js-mobile-menu-text">
-          Donate</a></li>
-        <hr style="width: 100%;">
-        <li><a href="#" class="js-open-popup js-mobile-menu-text">
-          Contact Me</a></li>
-      </ul>
-      <!-- End of Mobile viewport -->
+        <img src="../Images/official_logo.png" alt="#">
+      </a>
+      <button id="js-nav-button" style="background: none; border-radius: 50px;">
+        <img src="../Images/hidden_buttons_icon.png" alt="#">
+      </button>
     </nav>
-    <!-- End of navigation section -->
 
-
-    <!-- Contact Me Pop-up -->
-    <div id="contactme-popup-container" class="js-popup">
-      <img src="../Images/contactme_popup_icon.png" alt="#">
-      <p>Contact Me</p>
-      <form action="" class="popup-parent">
-        <label for="name">Name</label>
-        <input id="js-name-input" type="text" placeholder="Please use your real name." maxlength="25" required>
-        <label for="email">Email</label>
-        <input id="js-email-input" type="email" placeholder="you@example.com" required>
-        <textarea id="js-message-input" type="text" placeholder="Your Message" required></textarea>
-      </form>
-      <div class="pop-up-buttons">
-       <button class="js-close-popup">Close</button>
-       <button class="js-send-message-button">Send Message</button>
-      </div>
+    <!-- HIDDEN NAV BUTTONS -->
+    <div id="hidden-nav-buttons">
+      <a href="../HTML/3dgames.html"><button>3D Games</button></a>
+      <a href="../HTML/assets_showcase.html"><button>Showcase</button></a>
+      <a href="../Documents/Resume.pdf"><button>Resume/CV</button></a>
+      <a href="../HTML/certificates.html"><button>Certificates</button></a>
     </div>
 
-    <div id="popup-background" class="background"></div>
-    <!-- End of Contact Me Pop-up-->
-    
-
-    <!-- Games Section -->
-    <section class="section-container" id="fatebringer">
-      <div class="section-parent js-block-parent">
-        <div class="game-title js-title-box">Fatebringer</div>
-        <picture class="game-picture">
-          <img src="../Images/Fatebringer_Demo_image.png"
-          style="max-width: 100%; max-height: 100%; border-radius: 10px">
-        </picture>
-        <div id="game-description-container" class="js-game-description">
-          <div class="game-description-parent">
-            <div name="genre">
-              <p class="description-title">Genre:
-                <img src="../Images/shooter_genre_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                2D Action/Shooter scroller based on Destiny,
-                a game created by Bungie.
-              </p>
-            </div>
-            <hr>
-            <div name="gameplay">
-              <p class="description-title">Gameplay:
-                <img src="../Images/gameplay_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                Basic "W-A-S-D" keyboard movement, "SPACEBAR" to jump,
-                "Alpha NUMs" for special abilities & mouse controls.
-              </p>
-            </div>
-            <hr>
-            <div name="description">
-              <p class="description-title">Description:
-                <img src="../Images/description_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                Fatebringer is a 2D scroller with 5 different locations to play in.
-                The character has 5 different abilities with basic keyboard & mouse
-                controls. The mouse moves the arms of the character and that
-                is how you aim the gun.
-                <br><br>
-                Each location has its own enemy types and final boss.
-                Some enemies are stronger than others and take more bullets to
-                be defeated or deal more damage to the player.
-              </p>
-            </div>
-            <hr>
-            <div name="requirements">
-              <p class="description-title">Requirements:
-                <img src="../Images/requirements_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                No specific requirements. Originally intended
-                to be an OpenGL build but it exceeded the allowed file size.
-              </p>
-            </div>
-          </div>
-          <!-- Disclaimer -->
-          <div id="disclaimer" class="js-block-parent" name="disclaimer-parent">
-            <p style="color: #ca0909; font-weight: bold;
-            text-transform: uppercase; letter-spacing: 3px;">
-              Disclaimer:
-            </p>
-            <p>
-              I do NOT own anything related to Destiny or
-              have any relationship to Bungie. This project
-              was created for learning purposes.
-            </p>
-          </div>
-          <!-- End of Disclaimer -->
+    <!-- GAME #1 -->
+    <section id="section-container" name="fatebringer">
+      <!-- PHOTO -->
+      <div class="game-photo">
+        <h3>Fatebringer</h3>
+        <img src="../Images/Fatebringer_Demo_image.png" alt="#">
+        <a href="https://mega.nz/file/UAwwHZSL#OLcoRGR_ennKfT0tIX8WOyxSKn7e0Qo3P9_wMzPiYEs">
+          <button>Download</button></a>
+      </div>
+      <!-- DESCRIPTION -->
+      <div class="game-description">
+        <div name="genre">
+          <img src="../Images/shooter_genre_icon.png" alt="#">
+          <h5>Genre:</h5>
+          <h6>Shooter / Sci-fi</h6>
         </div>
-
-
-        <!-- Buttons -->
-        <div id="buttons-parent">
-          <a href="https://mega.nz/file/UAwwHZSL#OLcoRGR_ennKfT0tIX8WOyxSKn7e0Qo3P9_wMzPiYEs">
-            <button class="buttons">Download (PC)</button>
-          </a>
-
-          <a href="#">
-            <button class="buttons js-next-game-button">Next Game (1/3)</button>
-          </a>
+        <div name="platform">
+          <img src="../Images/gameplay_icon.png" alt="#">
+          <h5>Platform:</h5>
+          <h6>Windows PC</h6>
         </div>
-        <!-- End of Buttons -->
+        <div name="description">
+          <img src="../Images/description_icon.png" alt="#">
+          <h5>Description:</h5>
+          <h6>Based on Bungie's Destiny</h6>
+        </div>
       </div>
     </section>
 
-    <section class="section-container" id="savior">
-      <div class="section-parent js-block-parent">
-        <div class="game-title js-title-box">Savior</div>
-        <picture class="game-picture">
-          <img src="../Images/savior_demo_image.png"
-          style="max-width: 100%; max-height: 100%; border-radius: 10px">
-        </picture>
-        <div id="game-description-container" class="js-game-description">
-          <div class="game-description-parent">
-            <div name="genre">
-              <p class="description-title">Genre:
-                <img src="../Images/slasher_genre_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                2D Survival/Slasher
-              </p>
-            </div>
-            <hr>
-            <div name="gameplay">
-              <p class="description-title">Gameplay:
-                <img src="../Images/gameplay_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                Basic "W-A-S-D" keyboard movement, "SPACEBAR" to jump,
-                mouse controls for attack & "P" for pause.
-              </p>
-            </div>
-            <hr> 
-            <div name="description">
-              <p class="description-title">Description:
-                <img src="../Images/description_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                Savior is a 2D Survival/Slahser with multiple levels to play in.
-                Besides the normal mode, there is also a hard mode for those
-                wanting a challenge.
-                <br><br>
-                Each location has its own enemy types and timers for staying alive.
-                Some enemies are stronger than others and will behave slightly
-                differently.
-              </p>
-            </div>
-            <hr>
-            <div name="requirements">
-              <p class="description-title">Requirements:
-                <img src="../Images/requirements_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                No specific requirements. Originally intended
-                to be an OpenGL build but it exceeded the allowed file size.
-              </p>
-            </div>
-          </div>
+    <!-- GAME #2 -->
+    <section id="section-container" name="savior">
+      <!-- PHOTO -->
+      <div class="game-photo">
+        <h3>Savior</h3>
+        <img src="../Images/savior_demo_image.png" alt="#">
+        <a href="https://play.unity.com/mg/other/savior-dy">
+          <button>Play</button></a>
+      </div>
+      <!-- DESCRIPTION -->
+      <div class="game-description">
+        <div name="genre">
+          <img src="../Images/slasher_genre_icon.png" alt="#">
+          <h5>Genre:</h5>
+          <h6>Survival / Slasher</h6>
         </div>
-        <!-- End of Savior Game -->
-
-        <!-- Buttons -->
-        <div id="buttons-parent">
-          <a href="#">
-            <button class="buttons js-previous-game-button">Previous Game</button>
-          </a>
-
-          <a href="https://play.unity.com/mg/other/savior-dy">
-            <button class="buttons">Play (WebGL)</button>
-          </a>
-
-          <a href="#">
-            <button class="buttons js-next-game-button">Next Game (2/3)</button>
-          </a>
+        <div name="platform">
+          <img src="../Images/gameplay_icon.png" alt="#">
+          <h5>Platform:</h5>
+          <h6>WebGL PC</h6>
         </div>
-        <!-- End of Buttons -->
+        <div name="description">
+          <img src="../Images/description_icon.png" alt="#">
+          <h5>Description:</h5>
+          <h6>Defeat enemies and survive levels</h6>
+        </div>
       </div>
     </section>
 
-    <section class="section-container" id="grumpy">
-      <div class="section-parent js-block-parent">
-        <div class="game-title js-title-box">Grumpy</div>
-        <picture class="game-picture">
-          <img src="../Images/grumpy_demo_image.png"
-          style="max-width: 100%; max-height: 100%; border-radius: 10px">
-        </picture>
-        <div id="game-description-container" class="js-game-description">
-          <div class="game-description-parent">
-            <div name="genre">
-              <p class="description-title">Genre:
-                <img src="../Images/physics_genre_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                2D Physics Game.
-              </p>
-            </div>
-            <hr>
-            <div name="gameplay">
-              <p class="description-title">Gameplay:
-                <img src="../Images/gameplay_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                Simple mouse click + drag controls.
-              </p>
-            </div>
-            <hr>
-            <div name="description">
-              <p class="description-title">Description:
-                <img src="../Images/description_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                Grumpy is a simple 2D game created for learning purposes.
-                <br><br>
-                The goal of the game is to hit the enemies and make points,
-                hitting crates also create points.
-              </p>
-            </div>
-            <hr>
-            <div name="requirements">
-              <p class="description-title">Requirements:
-                <img src="../Images/requirements_icon.png" alt="#">
-              </p>
-              <p class="description-text">
-                It is an OpenGL build, make sure to have a browser that supports it.
-              </p>
-            </div>
-          </div>
+    <!-- GAME #3 -->
+    <section id="section-container" name="grumpy">
+      <!-- PHOTO -->
+      <div class="game-photo">
+        <h3>Grumpy</h3>
+        <img src="../Images/grumpy_demo_image.png" alt="#">
+        <a href="https://play.unity.com/mg/other/webgl-builds-46115">
+          <button>Play</button></a>
+      </div>
+      <!-- DESCRIPTION -->
+      <div class="game-description">
+        <div name="genre">
+          <img src="../Images/physics_genre_icon.png" alt="#">
+          <h5>Genre:</h5>
+          <h6>2D Physics</h6>
         </div>
-
-        <!-- Buttons -->
-        <div id="buttons-parent">
-          <a href="#">
-            <button class="buttons js-previous-game-button">Previous Page</button>
-          </a>
-
-          <a href="https://play.unity.com/mg/other/webgl-builds-46115">
-            <button class="buttons">Play (WebGL)</button>
-          </a>
+        <div name="platform">
+          <img src="../Images/gameplay_icon.png" alt="#">
+          <h5>Platform:</h5>
+          <h6>WebGL PC</h6>
         </div>
-        <!-- End of Buttons -->
+        <div name="description">
+          <img src="../Images/description_icon.png" alt="#">
+          <h5>Description:</h5>
+          <h6>Hit enemies and things to gain points</h6>
+        </div>
       </div>
     </section>
-    <!-- End of Games Section -->
 
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-columns" name="personal">
-        <div class="footer-titles">Personal</div>
-        <p>
-          <a href="aboutme.html">About Me</a>
-          <a href="#" class="js-open-popup">Contact Me</a>
-          <a href="https://gofund.me/626b8087">Donate<br><br></a>
-        </p>
-      </div>
-
-      <div class="footer-columns" name="game-related">
-        <div class="footer-titles">
-          Game Related</div>
+    <!-- FOOTER -->
+    <footer id="footer-container">
+      <!-- ELEMENT 1 -->
+      <section class="footer-column" name="social-media">
+        <div class="footer-titles">Social Media</div>
+        <div>
+          <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
+          <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
+          <a href="https://twitter.com/lira_phillipe">Twitter</a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/phillipe.lira/">Instagram</a>
+          <a href="https://www.twitch.tv/plgamedev">Twitch</a>
+        </div>
+      </section>
+      <!-- ELEMENT 2 -->
+      <section class="footer-column" name="dev-journey">
+        <div class="footer-titles">Development Journey</div>
+        <div>
           <a href="../HTML/2dgames.html">2D Games</a>
           <a href="../HTML/3dgames.html">3D Games</a>
+        </div>
+        <div>
           <a href="../HTML/assets_showcase.html">Showcase</a>
-      </div>
-
-      <div class="footer-columns" name="social-media">
-        <div class="footer-titles">
-        Social Media</div>
-        <a href="https://www.youtube.com/channel/UCyvjOraD308lD19FkyYPfDw">Youtube</a>
-        <a href="https://www.twitch.tv/plgamedev">Twitch</a>
-        <a href="https://www.instagram.com/phillipe.lira/">Instagram<br><br></a>
-        <a href="https://www.facebook.com/phillipe.lira">Facebook</a>
-        <a href="https://twitter.com/lira_phillipe">Twitter</a>
-      </div>
+        </div>
+      </section>
     </footer>
-    <!-- End of Footer -->
-
 
     <script src="../JavaScript/general.js"></script>
   </body>

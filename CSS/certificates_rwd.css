@@ -1,22 +1,5 @@
 @media(max-width: 2560px){
-    aside{
-        flex-direction: row;
-        align-items: center;
-        top: 100px;
-        text-align: center;
-    }
-
-    #mode-icons{
-        display: flex;
-        flex-direction: row;
-        margin: 20px;
-    }
-
-    #dark-mode{
-        position: relative;
-        left: 65px;
-        z-index: 1;
-    }
+    
 }
 
 @media(max-width: 1920px){
@@ -36,7 +19,13 @@
 }
 
 @media(max-width: 1080px){    
-    
+    .section-container{
+        flex-direction: column;
+    }
+
+    .certificate-block{
+        margin: 20px;
+    }
 }
 
 @media(max-width: 1024px){
@@ -44,9 +33,7 @@
 }
 
 @media(max-width: 962px){
-    .certificate-parent{
-        flex-basis: 100%;
-    }
+    
 }
 
 @media(max-width: 810px){
@@ -70,11 +57,15 @@
 }
 
 @media(max-width: 540px){
-    
+    .section-container{
+        width: 80%;
+    }
 }
 
 @media(max-width: 425px){
-    
+    .section-container{
+        width: 90%;
+    }
 }
 
 @media(max-width: 375px){
