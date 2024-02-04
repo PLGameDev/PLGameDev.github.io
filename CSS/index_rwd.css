@@ -3,11 +3,32 @@
 }
 
 @media(max-width: 1920px){
-    
+    #article-section{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #article-section img{
+        width: 50%;
+    }
+
+    .article{
+        margin: 30px 0;
+    }
 }
 
 @media(max-width: 1600px){
-    
+    .article-description{
+        padding: 0px;
+    }
+
+    #news{
+        flex-direction: column;
+    }
+
+    #news img{
+        width: 60%;
+    }
 }
 
 @media(max-width: 1440px){
@@ -17,6 +38,18 @@
 @media(max-width: 1280px){
     #personal-info-section{
         width: 70%;
+    }
+
+    .article{
+        flex-direction: column;
+    }
+
+    #article-section img{
+        width: 40%;
+    }
+
+    #news img{
+        width: 60%;
     }
 }
 
@@ -52,6 +85,14 @@
     .personal-info-text{
         flex-basis: 80%;
         order: 1;
+    }
+
+    #article-section img{
+        width: 50%;
+    }
+
+    #news img{
+        width: 100%;
     }
 }
 

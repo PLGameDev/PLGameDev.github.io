@@ -90,7 +90,7 @@
 }
 
 /* -------------------- GAMES SECTION ------------------------- */
-#games-section{
+#article-section{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -99,18 +99,61 @@
   border: 0px solid red;
 }
 
-#games-section div{
+#article-section img{
+  border-radius: 20px;
+  align-content: left;
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+
+#article-section a{
+  margin: 20px 0;
+}
+
+.article{
   display: flex;
-  flex-direction: column;
-  flex-basis: 15%;
+  flex-direction: row;
+  width: auto;
+  height: auto;
   text-align: center;
   padding: 20px;
   margin: 30px;
   background-color: #202025;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  border: 0px solid red;
 }
 
-#games-section a{
-  margin: 20px 0;
+.article-description{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  padding: 30px;
+  margin: auto;
+  border: 0px solid red;
+}
+
+.article-description p{
+  font-weight: 100;
+}
+
+.article-description div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+
+.article-description img{
+  max-width: 30%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.article-description img:hover{
+  transform: scale(2);
 }
