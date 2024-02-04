@@ -1,0 +1,3 @@
+white: #edf0f1
+black: #16161a
+dark grey: #24252A
