@@ -42,6 +42,7 @@ button:hover{
   flex-direction: column;
   text-align: center;
   position: fixed;
+  width: 35%;
   z-index: 100;
   padding: 50px;
   top: 50%;
